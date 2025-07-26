@@ -1,0 +1,5 @@
+<!-- /public/icons/boat.svg -->
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round"
+    d="M2.25 18.75a18.707 18.707 0 0 1 9.75-3 18.707 18.707 0 0 1 9.75 3M12 15.75v-4.5m0 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
+</svg>

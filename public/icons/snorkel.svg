@@ -1,0 +1,5 @@
+<!-- /public/icons/snorkel.svg -->
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round"
+    d="M15 9.75a6 6 0 0 1-12 0V4.5h1.5V9.75a4.5 4.5 0 0 0 9 0V4.5H15v5.25ZM19.5 3v5.25c0 3.727-3.023 6.75-6.75 6.75a6.75 6.75 0 0 1-6.75-6.75V3" />
+</svg>

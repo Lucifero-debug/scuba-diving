@@ -1,0 +1,5 @@
+<!-- /public/icons/surfboard.svg -->
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round"
+    d="M16.5 3.75S18.75 10.5 12 20.25M7.5 3.75S5.25 10.5 12 20.25M12 20.25L9.75 17.25M12 20.25l2.25-3" />
+</svg>
