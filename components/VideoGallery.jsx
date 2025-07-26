@@ -22,7 +22,7 @@ const videos = [
   },
   {
     thumbnail:
-      "https://images.unsplash.com/photo-1716479801966-3c8dc9b4e9cb?w=600&auto=format&fit=crop&q=60",
+      "https://plus.unsplash.com/premium_photo-1669839137069-4166d6ea11f4?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c3BhY2V8ZW58MHx8MHx8fDA%3D",
     video: "https://cdn.pixabay.com/video/2020/03/30/34608-402679728_tiny.mp4",
   },
   {
