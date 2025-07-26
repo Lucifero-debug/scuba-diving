@@ -37,7 +37,7 @@ export default function VideoGallery() {
 
   return (
     <div
-      className="relative z-20 grid grid-cols-1 md:grid-cols-3 gap-12 justify-center items-center px-6"
+      className="relative z-20 grid grid-cols-1 md:grid-cols-3 gap-12 justify-center items-center px-6 mt-6"
       style={{ perspective: "1800px" }}
     >
       {videos.map((video, idx) => (
