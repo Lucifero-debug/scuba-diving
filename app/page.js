@@ -4,6 +4,7 @@ import ExperienceSection from "@/components/ExperiencedSection";
 import { First } from "@/components/First";
 import PricingSection from "@/components/PricingSection";
 import ScubaCardsSection from "@/components/ScubaCardsSection";
+import VideoGallery from "@/components/VideoGallery";
 import WhyChooseUsSection from "@/components/WhyChooseUs";
 import Image from "next/image";
 
@@ -45,6 +46,7 @@ export default function Home() {
 <ScubaCardsSection/>
 <WhyChooseUsSection/>
 <Clients/>
+<VideoGallery/>
     </div>
   );
 }
