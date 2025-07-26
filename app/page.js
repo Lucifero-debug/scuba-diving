@@ -1,7 +1,9 @@
+import BestServiceSection from "@/components/BestService";
 import Carousel from "@/components/Carousel";
 import Clients from "@/components/Clients";
 import ExperienceSection from "@/components/ExperiencedSection";
 import { First } from "@/components/First";
+import HeaderWithLightReveal from "@/components/HeaderLightReveal";
 import PricingSection from "@/components/PricingSection";
 import ScubaCardsSection from "@/components/ScubaCardsSection";
 import VideoGallery from "@/components/VideoGallery";
@@ -10,7 +12,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-   <div className="h-screen w-full">
+   <div className="h-screen w-full overflow-x-hidden">
 <First/>
 <div className="flex flex-col md:flex-row w-full justify-center items-center min-h-screen p-4 md:p-16 gap-12">
   {/* Left Section */}
@@ -46,7 +48,11 @@ export default function Home() {
 <ScubaCardsSection/>
 <WhyChooseUsSection/>
 <Clients/>
+<HeaderWithLightReveal/>
+<div className="h-24 md:h-16" />
 <VideoGallery/>
+<div className="h-64 md:h-44" />
+<BestServiceSection/>
     </div>
   );
 }
