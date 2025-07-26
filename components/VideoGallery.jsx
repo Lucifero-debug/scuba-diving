@@ -1,9 +1,8 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import { Card, CardContent } from "@/components/ui/card";
-import { cn } from "@/lib/utils";
-import { motion, useMotionValue, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
+import Image from "next/image";
 
 const videos = [
   {
@@ -34,87 +33,78 @@ const videos = [
 ];
 
 export default function VideoGallery() {
-  const [playingIndex, setPlayingIndex] = useState(null);
-  const [isMobile, setIsMobile] = useState(false);
-  const [tiltData, setTiltData] = useState({ x: 0, y: 0 });
-
-  // Enable gyroscope effect on mobile
-  useEffect(() => {
-    const isTouch = window.matchMedia("(pointer: coarse)").matches;
-    setIsMobile(isTouch);
-
-    const handleOrientation = (e) => {
-      const maxTilt = 15;
-      const x = Math.min(Math.max(e.beta || 0, -30), 30);
-      const y = Math.min(Math.max(e.gamma || 0, -30), 30);
-
-      setTiltData({
-        x: (x / 30) * maxTilt,
-        y: (y / 30) * maxTilt,
-      });
-    };
-
-    if (isTouch && window.DeviceOrientationEvent) {
-      window.addEventListener("deviceorientation", handleOrientation);
-    }
-
-    return () => {
-      window.removeEventListener("deviceorientation", handleOrientation);
-    };
-  }, []);
+  const [playing, setPlaying] = useState(null);
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 px-6 py-16 bg-[#0f172a] min-h-screen">
-      {videos.map((item, idx) => (
+    <div
+      className="relative z-20 grid grid-cols-1 md:grid-cols-3 gap-12 justify-center items-center px-6"
+      style={{ perspective: "1800px" }}
+    >
+      {videos.map((video, idx) => (
         <motion.div
           key={idx}
-          className="relative group perspective-[1200px]"
+          whileHover={{
+            rotateX: -15,
+            rotateY: 15,
+            scale: 1.02,
+            z: 100,
+            translateZ: 150,
+          }}
+          whileTap={{
+            scale: 0.95,
+            rotateX: 0,
+            rotateY: 0,
+          }}
+          whileInView={{
+            opacity: 1,
+            scale: 1.05,
+            rotateX: -15,
+            rotateY: 15,
+            translateZ: 150,
+            z: 100,
+          }}
+          initial={{
+            opacity: 0,
+            y: 100,
+            rotateX: 25,
+            rotateY: -25,
+            scale: 0.95,
+          }}
+          viewport={{ once: true, amount: 0.4 }}
+          transition={{ type: "spring", stiffness: 100, damping: 18, delay: idx * 0.2 }}
+          className="relative rounded-2xl overflow-hidden bg-black shadow-[0_0_60px_#06b6d4b0] transform-style-preserve-3d"
         >
-          <motion.div
-            animate={
-              isMobile
-                ? {
-                    rotateX: -tiltData.x,
-                    rotateY: tiltData.y,
-                    scale: 1.04,
-                  }
-                : {}
-            }
-            whileHover={!isMobile ? { rotateY: 12, rotateX: -10, scale: 1.06 } : {}}
-            transition={{ type: "spring", stiffness: 200, damping: 20 }}
-            className="transform-style-preserve-3d relative"
-          >
-            {/* Glow + sparkle layer */}
-            <div className="absolute inset-0 rounded-3xl pointer-events-none z-10">
-              <div className="absolute w-full h-full bg-gradient-to-br from-cyan-400/10 to-purple-600/10 rounded-3xl blur-lg opacity-30 animate-pulse" />
-              <div className="absolute w-full h-full rounded-3xl bg-[radial-gradient(circle_at_top_left,_var(--tw-gradient-stops))] from-cyan-500/20 via-transparent to-transparent opacity-10 animate-spin-slow" />
+          <div className="absolute -inset-1 bg-gradient-to-br from-cyan-500 to-purple-600 blur-xl z-0 rounded-2xl opacity-60" />
+          <div className="relative z-10">
+            <Image
+              src={video.thumbnail}
+              alt="Thumbnail"
+              width={400}
+              height={250}
+              className="w-full h-auto object-cover"
+            />
+            <div className="absolute inset-0 flex items-center justify-center z-20 bg-black/60 backdrop-blur-sm opacity-0 hover:opacity-100 transition">
+              <button
+                onClick={() => setPlaying(idx)}
+                className="px-6 py-2 text-white text-xl bg-cyan-500 rounded-full shadow-lg hover:scale-110 transition"
+              >
+                Play Video
+              </button>
             </div>
+          </div>
 
-            <Card
-              onClick={() => setPlayingIndex(idx)}
-              className={cn(
-                "overflow-hidden cursor-pointer border-2 border-cyan-500/30 shadow-xl rounded-3xl bg-gradient-to-br from-[#0f172a] to-[#1e293b] group-hover:shadow-cyan-400/50 transition-all duration-500"
-              )}
+          {/* Show video if playing */}
+          {playing === idx && (
+            <video
+              autoPlay
+              muted
+              controls
+              className="absolute inset-0 w-full h-full object-cover z-30 rounded-2xl"
+              onClick={() => setPlaying(null)}
             >
-              <CardContent className="p-0 h-[220px] sm:h-[260px] md:h-[300px]">
-                {playingIndex === idx ? (
-                  <video
-                    src={item.video}
-                    controls
-                    autoPlay
-                    className="w-full h-full object-cover rounded-3xl"
-                  />
-                ) : (
-                  <motion.img
-                    src={item.thumbnail}
-                    alt="Thumbnail"
-                    className="w-full h-full object-cover rounded-3xl"
-                    whileHover={{ scale: 1.05 }}
-                  />
-                )}
-              </CardContent>
-            </Card>
-          </motion.div>
+              <source src={video.video} type="video/mp4" />
+            </video>
+          )}
         </motion.div>
       ))}
     </div>

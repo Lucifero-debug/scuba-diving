@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function ScubaCardsSection() {
   return (
-    <section className="relative w-full min-h-[130vh] bg-[#030712] text-white overflow-hidden py-24 px-6">
+    <section className="relative w-full min-h-[130vh] bg-[#030712] text-white overflow-hidden py-24 px-12 md:px-4">
       {/* Dynamic Underwater BG Parallax */}
       <motion.div
         className="absolute inset-0 z-0"
@@ -53,7 +53,7 @@ export default function ScubaCardsSection() {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 1.5 }}
       >
-        <h1 className="text-6xl font-bold tracking-widest text-cyan-400 drop-shadow-[0_0_10px_#06b6d4]">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-widest text-cyan-400 drop-shadow-[0_0_10px_#06b6d4]">
           BESTSELLING PACKAGES
         </h1>
         <button className="mt-6 px-8 py-3 rounded-full bg-cyan-500 text-black text-lg font-semibold hover:bg-cyan-400 transition">
@@ -62,16 +62,16 @@ export default function ScubaCardsSection() {
       </motion.div>
 
       {/* Cards */}
-      <div className="relative z-20 grid grid-cols-1 md:grid-cols-2 gap-20 justify-center items-center max-w-7xl mx-auto">
+      <div className="relative z-20 grid grid-cols-1 md:grid-cols-2 gap-20 justify-center items-center max-w-7xl mx-auto" style={{ perspective: "1000px" }}>
     {[...Array(2)].map((_, idx) => (
   <motion.div
     key={idx}
-    whileHover={{ rotateX: 10, rotateY: -10, scale: 1.03 }}
-    whileTap={{ rotateY: 35, scale: 0.98 }}
+    whileHover={{ rotateX: 10, rotateY: -10, translateZ: 80, scale: 1.03 }}
+    whileTap={{ rotateY: 180, scale: 0.98, translateZ: 150 , rotateX: -180 }}
     transition={{ type: "spring", stiffness: 180, damping: 14 }}
     className="transform-style preserve-3d"
   >
-    <Card className="w-[380px] md:w-[480px] min-h-[500px] bg-gradient-to-br from-[#0f172a]/60 to-[#1e1b4b]/70 backdrop-blur-lg border border-cyan-400/30 shadow-[0_0_30px_#06b6d480] hover:shadow-[0_0_60px_#06b6d4] transition-all duration-500 rounded-3xl overflow-hidden">
+    <Card className="w-full md:w-[480px] min-h-[500px] bg-gradient-to-br from-[#0f172a]/60 to-[#1e1b4b]/70 backdrop-blur-lg border border-cyan-400/30 shadow-[0_0_30px_#06b6d480] hover:shadow-[0_0_60px_#06b6d4] transition-all duration-500 rounded-3xl overflow-hidden">
       <CardContent className="flex flex-col gap-6 p-8">
         <h2 className="text-2xl font-bold text-center text-white">
           {idx === 0
