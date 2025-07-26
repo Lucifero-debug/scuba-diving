@@ -88,7 +88,7 @@ const cards = [
         {cards.map((card, index) => (
           <motion.div
             key={index}
-            className="relative  min-w-[360px] md:min-w-[450px] snap-center shrink-0 group"
+            className="relative  min-w-[320px] md:min-w-[450px] snap-center shrink-0 group"
             initial={{ opacity: 0, y: 50, rotateY: 25 }}
             whileInView={{ opacity: 1, y: 0, rotateY: 0 }}
             transition={{
