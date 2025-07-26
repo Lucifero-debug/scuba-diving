@@ -9,14 +9,14 @@ const features = [
     title: "Planning And Strategy",
     description:
       "We'll collaborate to map out your website's goals, target audience, and key functionalities.",
-    icon: <FaChalkboardTeacher className="text-5xl text-white" />,
+    icon: <FaChalkboardTeacher className="text-4xl md:text-5xl text-white" />,
     revealProps: { animationSpeed: 5.1, containerClassName: "bg-emerald-900" },
   },
   {
     title: "Development & Updates",
     description:
       "I cue my lofi playlist and dive into coding. From sketches to polished code, you stay updated.",
-    icon: <FaLaptopCode className="text-5xl text-white" />,
+    icon: <FaLaptopCode className="text-4xl md:text-5xl text-white" />,
     revealProps: {
       animationSpeed: 3,
       containerClassName: "bg-black",
@@ -31,7 +31,7 @@ const features = [
     title: "Launch & Deployment",
     description:
       "This is where the magic happens! Based on the approved design, I'll build your website from the ground up.",
-    icon: <FaRocket className="text-5xl text-white" />,
+    icon: <FaRocket className="text-4xl md:text-5xl text-white" />,
     revealProps: {
       animationSpeed: 3,
       containerClassName: "bg-sky-600",
@@ -42,11 +42,11 @@ const features = [
 
 export function Approach() {
   return (
-    <section className="w-full py-20">
-      <h1 className="heading">
+    <section className="w-full py-20 px-4">
+      <h1 className="heading text-center text-4xl md:text-6xl font-bold tracking-wider text-white">
         Why <span className="text-purple-400">Choose Us</span>
       </h1>
-      <div className="my-20 flex flex-col lg:flex-row items-center justify-center gap-4">
+      <div className="mt-16 flex flex-col lg:flex-row items-center justify-center gap-8">
         {features.map((feature, i) => (
           <Card
             key={i}
@@ -87,15 +87,15 @@ const Card = ({ title, icon, children, description }) => {
       onMouseEnter={() => !isMobile && setHovered(true)}
       onMouseLeave={() => !isMobile && setHovered(false)}
       onClick={handleClick}
-      className="border border-black/[0.2] group/canvas-card flex items-center justify-center dark:border-white/[0.2] max-w-sm w-full mx-auto p-4 relative h-[30rem] lg:h-[35rem] rounded-3xl cursor-pointer"
+      className="relative border border-black/20 dark:border-white/20 group/canvas-card w-full max-w-xs md:max-w-sm h-[26rem] md:h-[32rem] p-4 rounded-3xl cursor-pointer flex items-center justify-center"
     >
       {/* Corner Icons */}
-      <Icon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-black" />
-      <Icon className="absolute h-6 w-6 -bottom-3 -left-3 dark:text-white text-black" />
-      <Icon className="absolute h-6 w-6 -top-3 -right-3 dark:text-white text-black" />
-      <Icon className="absolute h-6 w-6 -bottom-3 -right-3 dark:text-white text-black" />
+      <Icon className="absolute h-5 w-5 -top-3 -left-3 text-black dark:text-white" />
+      <Icon className="absolute h-5 w-5 -bottom-3 -left-3 text-black dark:text-white" />
+      <Icon className="absolute h-5 w-5 -top-3 -right-3 text-black dark:text-white" />
+      <Icon className="absolute h-5 w-5 -bottom-3 -right-3 text-black dark:text-white" />
 
-      {/* Canvas Background Reveal */}
+      {/* Canvas Background */}
       <AnimatePresence>
         {hovered && (
           <motion.div
@@ -103,7 +103,7 @@ const Card = ({ title, icon, children, description }) => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="h-full w-full absolute inset-0 z-0"
+            className="absolute inset-0 z-0 w-full h-full"
           >
             {children}
           </motion.div>
@@ -111,19 +111,23 @@ const Card = ({ title, icon, children, description }) => {
       </AnimatePresence>
 
       {/* Front Content */}
-      <div className="relative z-20 w-full h-full flex flex-col items-center justify-center text-center px-4">
+      <div className="relative z-20 w-full h-full flex flex-col items-center justify-center text-center px-2">
         {/* Icon always visible */}
-        <div className={`transition duration-300 ${hovered ? "-translate-y-2" : ""}`}>
+        <div
+          className={`transition duration-300 ${
+            hovered ? "-translate-y-2 scale-110" : ""
+          }`}
+        >
           {icon}
         </div>
 
-        {/* Text only on hover/tap */}
+        {/* Text on hover/tap */}
         {hovered && (
           <>
-            <h2 className="dark:text-white text-3xl font-bold text-black mt-4 transition duration-300">
+            <h2 className="text-white text-xl md:text-2xl font-semibold mt-4 transition duration-300">
               {title}
             </h2>
-            <p className="dark:text-white text-sm text-black mt-4 transition duration-300" style={{ color: "#e4ecff" }}>
+            <p className="text-sm md:text-base text-white mt-3 px-1">
               {description}
             </p>
           </>
@@ -132,8 +136,6 @@ const Card = ({ title, icon, children, description }) => {
     </div>
   );
 };
-
-
 
 export const Icon = ({ className, ...rest }) => {
   return (
