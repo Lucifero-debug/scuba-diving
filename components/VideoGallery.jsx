@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
@@ -73,6 +73,22 @@ const angleFromPosition = (index) => {
   return { angleX, angleY, angleZ };
 };
 
+const getFloatRotation = (idx) => {
+  const { angleX, angleY, angleZ } = angleFromPosition(idx);
+  return {
+    rotateX: [angleX, angleX + 2, angleX],
+    rotateY: [angleY, angleY - 2, angleY],
+    rotateZ: [angleZ, angleZ + 1, angleZ],
+    translateZ: [angleZ, angleZ + 5, angleZ],
+    transition: {
+      repeat: Infinity,
+      repeatType: "mirror",
+      duration: 6 + (idx % 3),
+      ease: "easeInOut",
+    },
+  };
+};
+
 
 export default function VideoGallery() {
   const [playing, setPlaying] = useState(null);
@@ -141,20 +157,18 @@ const { angleX, angleY, angleZ } = angleFromPosition(idx);
         }
   }
   viewport={{ once: true, amount: 0.4 }}
+   animate={
+    isPlaying
+      ? { rotateX: 0, rotateY: 0, scale: 1.02, zIndex: 20 }
+      : getFloatRotation(idx)
+  }
   transition={{
     type: "spring",
     stiffness: 100,
     damping: 18,
     delay: idx * 0.2,
   }}
-            animate={{
-              opacity: 1,
-              scale: isPlaying ? 1.05 : 1,
-              rotateX: isPlaying ? 0 : angleX,
-              rotateY: isPlaying ? 0 : angleY,
-              x: playing !== null && playing !== idx ? offset : 0,
-              zIndex: isPlaying ? 50 : 10,
-            }}
+       
             className={`relative transform-style-preserve-3d cursor-pointer transition-all duration-500 ${
               isPlaying ? "col-span-1 md:col-span-3" : ""
             } rounded-2xl overflow-hidden bg-black shadow-[0_0_60px_#06b6d4b0] max-w-[90vw] sm:max-w-[420px] h-[220px] sm:h-[280px]`}
