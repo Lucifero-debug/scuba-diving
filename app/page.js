@@ -13,7 +13,7 @@ import Image from "next/image";
 export default function Home() {
   return (
    <div className=" w-full overflow-x-hidden">
-    <div className="relative w-full h-[90vh] md:h-[95vh] overflow-hidden">
+    <div className="relative w-full h-[99vh] md:h-[95vh] overflow-hidden">
 <First/>
     </div>
 <div className="flex flex-col md:flex-row w-full justify-center items-center min-h-screen p-4 md:p-16 gap-12">
