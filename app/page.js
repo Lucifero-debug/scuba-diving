@@ -16,22 +16,22 @@ export default function Home() {
     <div className="relative w-full h-[99vh] md:h-[95vh] overflow-hidden">
 <First/>
     </div>
-<div className="flex flex-col md:flex-row w-full justify-center items-center min-h-screen p-4 md:p-16 gap-12">
+<div className="flex flex-col md:flex-row w-full justify-center items-center min-h-screen p-6 md:p-16 gap-12 bg-gradient-to-b from-[#fdfbfb] to-[#ebedee] rounded-xl shadow-md">
   {/* Left Section */}
   <div className="w-full md:w-1/2 flex flex-col gap-6 px-2 md:px-4">
     {/* Section Label */}
-    <h2 className="text-sm text-yellow-400 tracking-[0.2em] font-medium uppercase">
+    <h2 className="text-sm text-blue-500 tracking-[0.2em] font-medium uppercase glow">
       Who We Are
     </h2>
 
     {/* Main Title */}
-    <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
+    <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-gray-900 leading-tight glow">
       This is Big
     </h1>
 
     {/* Paragraph */}
-    <p className="text-base md:text-lg text-gray-400 tracking-wide leading-relaxed pt-6 md:pt-10 max-w-xl">
-      <span className="text-white text-4xl md:text-6xl font-semibold float-left leading-none pr-2">
+    <p className="text-base md:text-lg text-gray-700 tracking-wide leading-relaxed pt-6 md:pt-10 max-w-xl">
+      <span className="text-blue-500 text-4xl md:text-6xl font-bold float-left leading-none pr-2 drop-shadow">
         L
       </span>
       orem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, nesciunt. Animi
@@ -41,10 +41,11 @@ export default function Home() {
   </div>
 
   {/* Right Section - Carousel */}
-  <div className="w-full md:w-1/2 max-w-md">
+  <div className="w-full md:w-1/2 max-w-md drop-shadow-xl">
     <Carousel />
   </div>
 </div>
+
 <ExperienceSection/>
 <PricingSection/>
 <ScubaCardsSection/>

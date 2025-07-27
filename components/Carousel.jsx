@@ -10,7 +10,7 @@ function Carousel() {
       discount: '30%',
       buttonLabel: 'CALL NOW',
       icon: FaBullseye,
-      iconColor: 'text-yellow-400',
+      iconColor: 'text-yellow-500 drop-shadow-md',
     },
     {
       title: 'Fly High on Budget Deals',
@@ -18,7 +18,7 @@ function Carousel() {
       discount: '25%',
       buttonLabel: 'BOOK NOW',
       icon: FaPlaneDeparture,
-      iconColor: 'text-blue-400',
+      iconColor: 'text-sky-500 drop-shadow-md',
     },
     {
       title: 'Unwrap Early Surprises!',
@@ -26,7 +26,7 @@ function Carousel() {
       discount: '20%',
       buttonLabel: 'CONTACT US',
       icon: FaGift,
-      iconColor: 'text-pink-400',
+      iconColor: 'text-pink-500 drop-shadow-md',
     },
   ];
 
@@ -59,19 +59,21 @@ function Carousel() {
             return (
               <div
                 key={index}
-                className="relative w-full flex-shrink-0 flex items-center justify-center px-4 py-8 sm:py-10 md:py-14"
+                className="relative w-full flex-shrink-0 flex items-center justify-center px-4 py-10 md:py-14"
               >
-                {/* Back Layer Card */}
-                <div className="absolute top-6 left-6 w-[92%] h-[92%] rounded-3xl -z-10 bg-[#12172b] opacity-80 blur-[2px] scale-[1.03] shadow-[0_0_30px_#12172b88]" />
-
                 {/* Main Card */}
-                <div className="relative w-full max-w-md p-4 sm:p-6 rounded-3xl bg-gradient-to-br from-[#1a1a2e] to-[#0f3460] shadow-[0_4px_60px_rgba(0,0,0,0.4)] text-white flex flex-col items-center gap-6 sm:gap-8 text-center border border-[#ffffff18]">
+                <div className="relative w-full max-w-md p-6 rounded-3xl 
+                    bg-gradient-to-br from-[#fff5ea] to-[#ffe3f2]
+                    border border-[#00000011]
+                    shadow-[0_12px_40px_rgba(0,0,0,0.08)]
+                    text-neutral-900 flex flex-col items-center gap-6 sm:gap-8 text-center"
+                >
                   <div className={`text-5xl sm:text-6xl ${offer.iconColor}`}>
-                    <IconComponent className="drop-shadow-md" />
+                    <IconComponent />
                   </div>
-                  <h2 className="text-lg sm:text-2xl font-bold tracking-wide text-white">{offer.title}</h2>
-                  <p className="text-xs sm:text-sm text-gray-400 uppercase tracking-[0.15em]">{offer.subtitle}</p>
-                  <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-gradient-to-br from-yellow-300 to-yellow-400 text-black flex flex-col items-center justify-center text-2xl sm:text-3xl font-extrabold shadow-inner shadow-yellow-500/20">
+                  <h2 className="text-lg sm:text-2xl font-bold tracking-wide">{offer.title}</h2>
+                  <p className="text-xs sm:text-sm text-neutral-500 uppercase tracking-[0.15em]">{offer.subtitle}</p>
+                  <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-gradient-to-br from-yellow-300 to-yellow-400 text-black flex flex-col items-center justify-center text-2xl sm:text-3xl font-extrabold shadow-inner">
                     {offer.discount}
                     <span className="text-xs font-bold mt-1">OFF</span>
                   </div>
@@ -88,7 +90,7 @@ function Carousel() {
       {/* Previous Button */}
       <button
         onClick={handlePrev}
-        className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 hover:bg-opacity-75 rounded-full"
+        className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-10 text-gray-700 p-2 hover:bg-opacity-20 rounded-full"
       >
         &#8592;
       </button>
@@ -96,7 +98,7 @@ function Carousel() {
       {/* Next Button */}
       <button
         onClick={handleNext}
-        className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 hover:bg-opacity-75 rounded-full"
+        className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-10 text-gray-700 p-2 hover:bg-opacity-20 rounded-full"
       >
         &#8594;
       </button>
@@ -107,8 +109,8 @@ function Carousel() {
           <div
             key={index}
             onClick={() => setCurrentIndex(index)}
-            className={`cursor-pointer w-3 h-3 rounded-full ${
-              currentIndex === index ? 'bg-white' : 'bg-gray-500'
+            className={`cursor-pointer w-3 h-3 rounded-full transition-all duration-300 ${
+              currentIndex === index ? 'bg-yellow-500' : 'bg-gray-300'
             }`}
           ></div>
         ))}

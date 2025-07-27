@@ -23,15 +23,15 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="h-full">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen bg-gradient-to-b from-[#f0fdfa] via-[#e0f7ff] to-white text-neutral-900`}
       >
-<Providers attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
-  <div className="flex flex-col min-h-screen">
+        <Providers attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
+          <div className="flex flex-col min-h-screen">
             <Navbar />
             <main className="flex-grow">{children}</main>
             <Footer />
           </div>
-      </Providers>
+        </Providers>
       </body>
     </html>
   );

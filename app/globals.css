@@ -1,7 +1,10 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+/* Custom dark variant */
 @custom-variant dark (&:is(.dark *));
+
+/* Reset + scroll behavior */
 html,
 body {
   padding: 0;
@@ -9,7 +12,12 @@ body {
   scroll-behavior: smooth;
 }
 
+body {
+  @apply bg-gradient-to-b from-[#f0fdfa] via-[#e0f7ff] to-white;
+}
 
+
+/* Theme variables */
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -50,41 +58,43 @@ body {
   --radius-xl: calc(var(--radius) + 4px);
 }
 
+/* Light Theme (default) */
 :root {
   --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
+  --background: oklch(0.985 0 0);
+  --foreground: oklch(0.15 0 0);
+  --card: oklch(0.97 0 0);
+  --card-foreground: oklch(0.15 0 0);
+  --popover: oklch(0.98 0 0);
+  --popover-foreground: oklch(0.15 0 0);
+  --primary: oklch(0.25 0 0);
+  --primary-foreground: oklch(0.98 0 0);
+  --secondary: oklch(0.94 0 0);
+  --secondary-foreground: oklch(0.25 0 0);
+  --muted: oklch(0.94 0 0);
+  --muted-foreground: oklch(0.55 0 0);
+  --accent: oklch(0.94 0 0);
+  --accent-foreground: oklch(0.25 0 0);
   --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
-  --chart-1: oklch(0.646 0.222 41.116);
+  --border: oklch(0.89 0 0);
+  --input: oklch(0.91 0 0);
+  --ring: oklch(0.72 0 0);
+  --chart-1: oklch(0.64 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
-  --chart-3: oklch(0.398 0.07 227.392);
+  --chart-3: oklch(0.4 0.07 227.392);
   --chart-4: oklch(0.828 0.189 84.429);
   --chart-5: oklch(0.769 0.188 70.08);
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
+  --sidebar: oklch(0.98 0 0);
+  --sidebar-foreground: oklch(0.15 0 0);
+  --sidebar-primary: oklch(0.25 0 0);
+  --sidebar-primary-foreground: oklch(0.98 0 0);
+  --sidebar-accent: oklch(0.94 0 0);
+  --sidebar-accent-foreground: oklch(0.25 0 0);
+  --sidebar-border: oklch(0.89 0 0);
+  --sidebar-ring: oklch(0.72 0 0);
 }
 
+/* Dark Theme */
 .dark {
   --background: oklch(0.145 0 0);
   --foreground: oklch(0.985 0 0);
@@ -119,6 +129,7 @@ body {
   --sidebar-ring: oklch(0.556 0 0);
 }
 
+/* Tailwind base layer */
 @layer base {
   * {
     @apply border-border outline-ring/50;
@@ -128,9 +139,10 @@ body {
   }
 }
 
+/* Custom animations and utilities */
 @theme inline {
   --animate-move: move 5s linear infinite;
- 
+
   @keyframes move {
     0% {
       transform: translateX(-200px);
@@ -140,35 +152,37 @@ body {
     }
   }
 }
-/* Hide scrollbar for horizontal scroll */
+
+/* Hide horizontal scrollbar */
 .scroll-no-bar::-webkit-scrollbar {
   display: none;
 }
-
 .scroll-no-bar {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;     /* Firefox */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
-.transform-style-preserve-3d {
-  transform-style: preserve-3d;
-}
-/* global.css */
-.neon-glow {
-  text-shadow: 0 0 8px #00f0ff, 0 0 16px #00f0ff;
-}
+/* Utility Classes */
+.transform-style-preserve-3d,
 .transform-style {
   transform-style: preserve-3d;
 }
+
+.neon-glow {
+  text-shadow: 0 0 8px #00f0ff, 0 0 16px #00f0ff;
+}
+
 @layer utilities {
   .heading {
     @apply font-bold text-4xl md:text-5xl text-center;
   }
 
   .black-gradient {
-    background: linear-gradient(90deg, #161a31 0%, #06091f 100%);
+    background: linear-gradient(90deg, #f3f4f9 0%, #e6e8ef 100%);
   }
 }
+
+/* Scroll animation */
 @keyframes scroll {
   0% {
     transform: translateX(0);
@@ -177,7 +191,6 @@ body {
     transform: translateX(-50%);
   }
 }
-
 .animate-scroll {
   animation: scroll var(--animation-duration) linear infinite;
   animation-direction: var(--animation-direction);
