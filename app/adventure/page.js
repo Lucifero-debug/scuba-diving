@@ -38,7 +38,7 @@ const page = () => {
     { title: "Full Combo Watersports", image: "https://images.pexels.com/photos/15875345/pexels-photo-15875345.jpeg" },
     { title: "Tasty Lunch & Beer", image: "https://images.pexels.com/photos/2280573/pexels-photo-2280573.jpeg" },
     { title: "Jetski + Banana + Speedboat", image: "https://images.pexels.com/photos/33046/jet-ski-water-sport-water-bike-water.jpg" },
-    { title: "Arabian Sea Island Views", image: "https://thumbs.dreamstime.com/b/view-arabian-sea-goa-arabian-sea-view-goa-184570081.jpg" },
+    { title: "Arabian Sea Island Views", image: "/adventure/arabian-view.webp" },
   ];
 
   const adventureBestFeatures = [
@@ -54,13 +54,13 @@ const verticalSliderFeatures = [
   { title: "Pickup & Drop Included", image: "https://img.freepik.com/free-photo/scooter-bike-parked-near-goa-beach-india_53876-142256.jpg" },
   { title: "Morning & Afternoon Slots", image: "https://img.freepik.com/free-photo/morning-sea-boat-coastal-landscape-summer-nature-travel-background-generative-ai_188544-12635.jpg" },
   { title: "Breakfast & Lunch Variants", image: "https://images.unsplash.com/photo-1624704974811-57a5f8bfb168" },
-  { title: "Unlimited Fun on Arabian Sea", image: "https://thumbs.dreamstime.com/b/view-arabian-sea-goa-arabian-sea-view-goa-184570081.jpg" },
+  { title: "Unlimited Fun on Arabian Sea", image: "/adventure/arabian-view.webp" },
 ];
 
   return (
     <div className="w-full min-h-screen">
       <DinnerCruiseHero
-        backgroundImage="https://www.adventuretripsgoa.com/wp-content/uploads/2018/01/adventure-party-boat-cruise-goa-1024x650.jpg"
+        backgroundImage="/adventure/hero.jpg"
         title="ADVENTURE BOAT PARTY"
         subtitle="Island, Dolphin Show, Watersports, Food"
         heading="Welcome to"
@@ -88,7 +88,7 @@ const verticalSliderFeatures = [
         <div className="flex flex-row flex-wrap justify-center items-start gap-10 max-w-[1440px]">
           <div className="relative w-[400px] h-[700px] rounded-2xl overflow-hidden shadow-lg">
             <Image
-              src="https://degoa.com/wp-content/uploads/2023/02/Luxury-Cat-25.jpeg"
+              src="/adventure/adven-bg.jpeg"
               alt="Adventure Background"
               fill
               className="object-cover"

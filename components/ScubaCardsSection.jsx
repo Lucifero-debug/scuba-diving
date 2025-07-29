@@ -60,7 +60,7 @@ export default function ScubaCardsSection() {
         transition={{ duration: 30, repeat: Infinity, ease: "easeInOut" }}
       >
         <Image
-          src="https://plus.unsplash.com/premium_photo-1666286163385-abe05f0326c4?w=600&auto=format&fit=crop&q=60"
+          src="/home/pricing.avif"
           alt="Scuba Background"
           fill
           className="object-cover opacity-50 saturate-[1.7] contrast-[1.2] brightness-110"

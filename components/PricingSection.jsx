@@ -73,7 +73,7 @@ export default function ScubaSpecialLightSection() {
         className="absolute inset-0 bg-cover bg-center z-10"
         style={{
           backgroundImage:
-            "url('https://plus.unsplash.com/premium_photo-1666286163385-abe05f0326c4?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8b2NlYW58ZW58MHx8MHx8fDA%3D')",
+            "url('/home/pricing.avif')",
         }}
         animate={{ scale: [1, 1.02, 1] }}
         transition={{ duration: 30, repeat: Infinity }}

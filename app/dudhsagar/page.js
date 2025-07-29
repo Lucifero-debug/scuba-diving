@@ -27,7 +27,7 @@ const dudhsagarCards = [
     title: "Spice Plantation Tour",
     subtitle: "CULTURE",
     description: "Learn about Goa’s rich spice heritage.\nAromatic walkthroughs with guides explaining each spice.",
-    image: "https://tse3.mm.bing.net/th/id/OIP.RjfWEBqlp_zQFtNZFkQwagHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    image: "/dudhsagar/spice.webp",
   },
   {
     title: "Goan Buffet Lunch",
@@ -54,7 +54,7 @@ const dudhsagarFeatures = [
   },
   {
     title: "Spice Plantation Guided Tour",
-    image: "https://tse3.mm.bing.net/th/id/OIP.RjfWEBqlp_zQFtNZFkQwagHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    image: "/dudhsagar/spice.webp",
   },
     {
     title: "Forest Entry & Life Jackets Included",
@@ -87,7 +87,7 @@ const page = () => {
   return (
     <div className='w-full min-h-screen'>
        <DinnerCruiseHero
-      backgroundImage="https://tse4.mm.bing.net/th/id/OIP.U3WIcMC4y93mHw9HanwnqQHaGL?r=0&w=1260&h=1050&rs=1&pid=ImgDetMain&o=7&rm=3"
+      backgroundImage="/dudhsagar/hero.webp"
       title="DUDHSAGAR WATERFALL TOUR"
       subtitle="Nature & Adventure"
       heading="Explore the Majestic"
@@ -111,7 +111,7 @@ const page = () => {
     {/* Left Image */}
     <div className="relative w-[400px] h-[700px] rounded-2xl overflow-hidden shadow-lg">
       <Image
-        src="https://sandeepachetan.com/wp-content/uploads/2013/10/tumblr_mltei6m8xe1s2js0yo1_1280.jpg"
+        src="/dudhsagar/dudhsagar.jpg"
         alt="Dudhsagar Waterfall"
         fill
         className="object-cover"

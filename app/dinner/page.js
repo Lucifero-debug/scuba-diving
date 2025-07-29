@@ -64,13 +64,13 @@ const page = () => {
     title: "Special Party Cruise",
     subtitle: "CUISINE",
     description: "Private Cruise For Special Occasions\nCustom Celebration Setup Available.",
-    image: "https://images.unsplash.com/photo-1736059057120-d24888d4d7d5?w=600&auto=format&fit=crop&q=60",
+    image: "/dinner/luxury-cruise.avif",
   },
   {
     title: "Traditional Dance Performance",
     subtitle: "ENTERTAINMENT",
     description: "Enjoy Goan Folk & Portuguese Dance\nLive Cultural Showcase on Board.",
-    image: "https://images.unsplash.com/photo-1736059057120-d24888d4d7d5?w=600&auto=format&fit=crop&q=60",
+    image: "/dinner/traditonal-dance.jpg",
   },
 ];
 const dinnerCruiseFeatures = [
@@ -141,7 +141,7 @@ const dinnerCruiseBestFeatures = [
           {/* Left Image */}
           <div className="relative w-[400px] h-[700px] rounded-2xl overflow-hidden shadow-lg">
             <Image
-              src="https://images.unsplash.com/photo-1662102763608-0d67c5fb3cc3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8bWlkZGxlJTIwZGVja3xlbnwwfHwwfHx8MA%3D%3D"
+              src="/dinner/sunset-dinner.jpg"
               alt="Cruise Background"
               fill
               className="object-cover"
@@ -189,7 +189,7 @@ const dinnerCruiseBestFeatures = [
       title="Luxury Dinner Cruise Party"
       subtitle="Sea | Music | Celebration | Food | Dance"
       timeNote="Pickup at 7:30 PM — Drop by 12:30 AM"
-      imageUrl="https://images.unsplash.com/photo-1529070538774-1843cb3265df" // Replace with cruise image
+      imageUrl="/dinner/luxury-special.webp" // Replace with cruise image
       heading="All-In-One Luxury Celebration on Sea"
       description="Enjoy a magical 4-hour evening on Goa’s only double-decker dinner cruise. From hotel pickup, welcome drinks, and buffet to casino views, DJ, folk dance, laser show, and celebration arrangements — this is the ultimate Goan experience!"
       callLabel="Call to Book Your Cruise"
