@@ -34,11 +34,9 @@ export default function Home() {
       <span className="text-blue-500 text-4xl md:text-6xl font-bold float-left leading-none pr-2 drop-shadow">
         S
       </span>
-cuba diving experience is one of a kind experience. We Provide Scubadiving experience at Goa and Andaman Islands, One of the best destination in india, if you are planning to visit any of these beautiful destinations, then we recommend to add scubadiving in your tour to add some Adventure and Thrill.
-
-We Provide best services in Goa & Andaman Because we've been there and done it. When you choose us, you'll feel the benefit of 7 years' experience of Scuba Diving and Watersports.
-
-Read More About Us
+cuba diving experience is one of a kind. We provide Scuba diving experiences at Goa and Andaman Islands, one of the best destinations in India. If you&apos;re planning to visit any of these beautiful destinations, then we recommend adding Scuba diving to your tour to add some adventure and thrill. <br /><br />
+  We provide the best services in Goa &amp; Andaman because we&apos;ve been there and done it. When you choose us, you&apos;ll feel the benefit of 7 years&apos; experience of Scuba Diving and Watersports. <br /><br />
+  <strong>Read More About Us</strong>
     </p>
   </div>
 
