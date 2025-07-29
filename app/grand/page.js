@@ -10,6 +10,7 @@ import BestServiceSection from '@/components/BestServiceSection';
 import VerticalCardSlider from '@/components/VerticalScrollCards';
 import DinnerCruiseHero from '@/components/DinnerCruiseHero';
 import CruiseOptionsSection from '@/components/CruiseOptions';
+import LuxuryDinnerCruiseSetion from '@/components/LuxuryCruisesection';
 
 const page = () => {
   const grandIsland = {
@@ -33,14 +34,86 @@ const page = () => {
     ],
   };
 
-  const sliderFeatures = [
-    { title: 'Scuba Diving Experience', image: '/grand/scuba.jpg' },
-    { title: 'High-Speed Boat Ride', image: '/grand/boat.jpg' },
-    { title: 'Dolphin Sightseeing', image: '/grand/dolphin.jpg' },
-    { title: 'Buffet Meals', image: '/grand/food.jpg' },
-    { title: 'Watersports Combo', image: '/grand/sports.jpg' },
-    { title: 'Underwater Photo/Video', image: '/grand/photo.jpg' },
-  ];
+const grandIslandFeatures = [
+  {
+    title: "65+ Km Grand Island Sea Trip",
+    image: "/grand/boat.jpg",
+  },
+  {
+    title: "Dolphin Show & Island Sightseeing",
+    image: "/grand/dolphin.jpg",
+  },
+  {
+    title: "Scuba Diving + Watersports Combo",
+    image: "/grand/scuba.jpg",
+  },
+  {
+    title: "Breakfast: Fruits, Samosa, Burger & Drinks",
+    image: "/grand/breakfast.jpg",
+  },
+  {
+    title: "Buffet Lunch + Beer & Soft Drinks",
+    image: "/grand/food.avif",
+  },
+  {
+    title: "GoPro10 HD Underwater Photography",
+    image: "/grand/photo.jpg",
+  },
+  {
+    title: "Free Hotel Pickup & Drop",
+    image: "/grand/pickup.jpeg",
+  },
+  {
+    title: "Parasailing, Jetski, Banana & Bumper Rides",
+    image: "/grand/sports.webp",
+  },
+  {
+    title: "Unlimited Scuba Dive (7–15m, No Time Limit)",
+    image: "/grand/scuba.jpg",
+  },
+];
+
+
+
+const grandIslandCards = [
+  {
+    title: "Scuba Diving Adventure",
+    subtitle: "THRILL",
+    description: "Unlimited scuba diving up to 15 meters.\nDive into crystal-clear waters with GoPro10 HD photo/video shoot.",
+    image: "/grand/scuba.jpg",
+  },
+  {
+    title: "High-Speed Boat Ride",
+    subtitle: "EXCITEMENT",
+    description: "65+ km thrilling sea trip to Grand Island.\nFeel the rush over the Arabian Sea with safety gear provided.",
+    image: "/grand/boat.jpg",
+  },
+  {
+    title: "Dolphin Show & Sightseeing",
+    subtitle: "NATURE",
+    description: "Watch dolphins jump in the wild!\nExplore the scenic beauty and hidden island views.",
+    image: "/grand/dolphin.jpg",
+  },
+  {
+    title: "Buffet Breakfast & Lunch",
+    subtitle: "FOOD",
+    description: "Morning fruits, burger, cold coffee.\nLunch buffet with veg, non-veg, beer & soft drinks included.",
+    image: "/grand/food.avif",
+  },
+  {
+    title: "Watersports Combo",
+    subtitle: "ADVENTURE",
+    description: "Includes Parasailing, Jetski, Banana, Bumper, and Speed Boat ride.\nAll 6+ top water activities in one combo!",
+    image: "/grand/sports.webp",
+  },
+  {
+    title: "Underwater Photo & Video",
+    subtitle: "MEMORIES",
+    description: "Get HD photos and videos of your dive.\nCaptured by GoPro10—perfect for solo or group moments.",
+    image: "/grand/photo.jpg",
+  },
+];
+
 
   const bestFeatures = [
     { icon: <Timer />, text: 'Full Day 8:30 AM – 5:30 PM' },
@@ -58,7 +131,7 @@ const page = () => {
         subtitle="Goa’s Top Rated Combo Adventure"
         heading="Ultimate Sea Adventure"
         highlight="Grand Island Package"
-        backgroundImage="/grand/grand-hero.jpg"
+        backgroundImage="/grand/hero.jpg"
         descriptionList={[
           '<strong>Full Day Scuba + Watersports + Meals</strong>',
           'Best Value Combo Adventure in Goa',
@@ -68,7 +141,7 @@ const page = () => {
 
       <CruiseOptionsSection
         sectionTitle={<><span className="text-blue-600">Adventure</span> Highlights</>}
-        cards={sliderFeatures}
+        cards={grandIslandCards}
         ctaText="BOOK YOUR ISLAND ADVENTURE"
         onCtaClick={() => window.scrollTo({ top: 1000, behavior: 'smooth' })}
       />
@@ -76,7 +149,7 @@ const page = () => {
       <div className="w-full flex justify-center px-4 py-10">
         <div className="flex flex-col lg:flex-row justify-center items-start gap-10 max-w-[1440px]">
           <div className="relative w-full lg:w-[400px] h-[700px] rounded-2xl overflow-hidden shadow-lg">
-            <Image src="/grand/grand-side.jpg" alt="Grand Island" fill className="object-cover" />
+            <Image src="/grand/vertical.jpg" alt="Grand Island" fill className="object-cover" />
           </div>
 
           <motion.div
@@ -112,6 +185,22 @@ const page = () => {
         </div>
       </div>
 
+      <LuxuryDinnerCruiseSetion
+  title="FULL FUN GRAND ISLAND COMBO"
+  subtitle="Scuba, Watersports, Sightseeing & Thrill"
+  timeNote="Trip Timing: 8:30 AM – 5:30 PM"
+  imageUrl="/grand/heavy.jpg"
+  heading="Your Ultimate Day Out in Goa"
+  description="A thrilling 65+ km speed boat sea trip to Grand Island with scuba diving, dolphin show, full watersports combo, buffet meals, GoPro shoot, and free hotel transfers!"
+  callLabel="Seats Filling Fast – Call to Book"
+  phoneNumber="+91 98765 43210"
+  whatsappLink="https://wa.me/919876543210"
+  scrollCardComponent={
+    <VerticalCardSlider features={grandIslandFeatures} intervalMs={4000} />
+  }
+/>
+
+
       <BestServiceSection
         title="Grand Island Combo"
         subtitle="The Most Complete Adventure Day in Goa"
@@ -121,7 +210,6 @@ const page = () => {
         description="Dive into Goa’s best tour combo: Scuba, Dolphins, Water Sports, Food, Photos & Pickup — All at once!"
       />
 
-      <VerticalCardSlider features={sliderFeatures} intervalMs={5000} />
       <ContactForm />
     </div>
   );

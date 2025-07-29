@@ -54,13 +54,13 @@ const page = () => {
     title: "Dinner Party Disco Cruise",
     subtitle: "ENJOY",
     description: "Chilled Drinks | Tasty Dinner Buffet | Dessert | BOLLYWOOD DJ | DANCE FLOOR | LASER LIGHTS\nPick up at 8:30",
-    image: "https://images.unsplash.com/photo-1643981693404-d76e58594bbf?w=600&auto=format&fit=crop&q=60",
+    image: "/dinner/disco.jpeg",
   },
   {
     title: "Middle Deck",
     subtitle: "CUISINE",
     description: "Enjoy at Full AC Middle Deck\nGet 5 Star Dinner from Novotel.",
-    image: "https://images.unsplash.com/photo-1736059057120-d24888d4d7d5?w=600&auto=format&fit=crop&q=60",
+    image: "/dinner/middle.jpg",
   },
   {
     title: "Special Party Cruise",
