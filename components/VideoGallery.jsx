@@ -205,7 +205,6 @@ const { angleX, angleY, angleZ } = angleFromPosition(idx);
               <div className="absolute inset-0 z-30">
                 <video
                   autoPlay
-                  muted
                   playsInline
                   controls
                   className="w-full h-full object-cover rounded-2xl"
