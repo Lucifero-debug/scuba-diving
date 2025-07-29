@@ -10,6 +10,7 @@ import LuxuryDinnerCruiseSection from '@/components/LuxuryCruisesection'
 import BestServiceSection from '@/components/BestServiceSection'
 import VerticalCardSlider from '@/components/VerticalScrollCards'
 import { Timer, Music, Disc3, Star, BadgeCheck, Users } from "lucide-react";
+import ContactForm from '@/components/ContactForm'
 
 const page = () => {
   const adventureCombos = [
@@ -155,6 +156,7 @@ const verticalSliderFeatures = [
         ctaLink={"https://wa.me/919643784204?text=Hello%2C%20I'm%20interested%20in%20the%20Adventure%20Boat%20Party%20Tour%20Package"}
         description="Thrilling rides, dolphin shows, watersports, and delicious meals — all in one ultimate sea adventure!"
       />
+      <ContactForm/>
     </div>
   );
 };

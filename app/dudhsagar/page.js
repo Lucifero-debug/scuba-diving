@@ -9,6 +9,7 @@ import LuxuryDinnerCruiseSetion from '@/components/LuxuryCruisesection';
 import VerticalCardSlider from '@/components/VerticalScrollCards';
 import BestServiceSection from '@/components/BestServiceSection';
 import { Bus, Trees, Salad, ShieldCheck, Mountain, Users } from "lucide-react";
+import ContactForm from '@/components/ContactForm';
 
 const dudhsagarCards = [
   {
@@ -181,6 +182,7 @@ const page = () => {
       ctaText="BOOK YOUR TRIP"
       ctaLink="https://wa.me/919643784204?text=Hello%2C%20I'm%20interested%20in%20the%20Dudhsagar%20Waterfalls%20Tour%20Package"
     />
+     <ContactForm/>
     </div>
   )
 }
