@@ -32,11 +32,13 @@ export default function Home() {
     {/* Paragraph */}
     <p className="text-base md:text-lg text-gray-700 tracking-wide leading-relaxed pt-6 md:pt-10 max-w-xl">
       <span className="text-blue-500 text-4xl md:text-6xl font-bold float-left leading-none pr-2 drop-shadow">
-        L
+        S
       </span>
-      orem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, nesciunt. Animi
-      voluptatem vero praesentium corporis necessitatibus odit autem nesciunt natus sed,
-      ipsum aliquid sequi pariatur. Sequi similique at libero! Ab.
+cuba diving experience is one of a kind experience. We Provide Scubadiving experience at Goa and Andaman Islands, One of the best destination in india, if you are planning to visit any of these beautiful destinations, then we recommend to add scubadiving in your tour to add some Adventure and Thrill.
+
+We Provide best services in Goa & Andaman Because we've been there and done it. When you choose us, you'll feel the benefit of 7 years' experience of Scuba Diving and Watersports.
+
+Read More About Us
     </p>
   </div>
 
