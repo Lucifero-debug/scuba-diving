@@ -20,13 +20,13 @@ export default function Home() {
   {/* Left Section */}
   <div className="w-full md:w-1/2 flex flex-col gap-6 px-2 md:px-4">
     {/* Section Label */}
-    <h2 className="text-sm text-blue-500 tracking-[0.2em] font-medium uppercase glow">
+    <h2 className="text-md text-blue-500 tracking-[0.2em] font-medium uppercase glow">
       Who We Are
     </h2>
 
     {/* Main Title */}
-    <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-gray-900 leading-tight glow">
-      This is Big
+    <h1 className="text-4xl md:text-6xl lg:text-6xl font-bold text-gray-900 leading-tight glow">
+      Welcome To Scuba Diving Adventure! Best Scuba and Water Sports Experience in Goa & Andaman Islands
     </h1>
 
     {/* Paragraph */}

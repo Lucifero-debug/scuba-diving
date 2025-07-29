@@ -59,13 +59,13 @@ export default function InfoDrawer() {
         </SheetHeader>
 
         {/* Info Content */}
-        <div className="p-4 flex flex-col gap-4 text-sm md:text-base flex-grow">
+        <div className="p-4 flex flex-col gap-4 text-md md:text-base flex-grow">
           <h2 className="text-2xl font-semibold text-gray-900">Contact Info</h2>
-          <p>✅ Scuba Dive in Goa - ₹3,499</p>
-          <p>✅ Jet Ski, Banana Ride, Parasailing</p>
-          <p>✅ Underwater Video Included</p>
-          <p className="text-cyan-600 mt-4 text-sm md:text-base font-medium">
-            Book now and get a free T-shirt!
+          <p>⚲ Calangute Circle, Goa</p>
+          <p>⚲ Port Blair Andaman Island</p>
+          <p>☏ 7982852750</p>
+          <p className="text-cyan-600 mt-4 text-md md:text-base font-medium">
+           ✉︎ info@scubadivingadventure.in
           </p>
         </div>
       </SheetContent>

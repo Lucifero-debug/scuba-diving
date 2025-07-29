@@ -20,7 +20,7 @@ const features = [
   { icon: PlaneLanding, label: "Pickup & Drop to Scuba Centre" },
 ];
 
-export default function BestServiceSection() {
+export default function BestService() {
   return (
     <section
       className="w-full relative py-20 px-4 bg-[#ecf7ff] text-black text-center overflow-hidden"
@@ -86,9 +86,9 @@ export default function BestServiceSection() {
         whileTap={{ scale: 0.95 }}
         transition={{ type: "spring", stiffness: 200, damping: 15 }}
       >
-        <Button className="px-8 py-4 bg-blue-500 text-white font-semibold rounded-full hover:bg-blue-400 transition">
+        <a href="https://wa.me/919643784204?text=Hello%2C%20it%27s%20great%20to%20know%20about%20goatourpackages.co.%20Help%20me%20with%20the%20Goa%20Tours%20package%20details%20and%20further%20process." className="px-8 py-4 bg-blue-500 text-white font-semibold rounded-full hover:bg-blue-400 transition">
           GET DETAILS ON WHATSAPP
-        </Button>
+        </a>
       </motion.div>
     </section>
   );

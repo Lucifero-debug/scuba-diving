@@ -8,9 +8,11 @@ import { useState } from "react";
 import InfoDrawer from "./InfoDrawer";
 
 const navItems = [
-  { name: "Home", href: "#" },
+  { name: "Home", href: "/" },
   { name: "Goa Tour Packages", href: "#packages" },
-  { name: "Goa Adventure", href: "#gallery" },
+  { name: "Dudh Sagar Waterfall", href: "/dudhsagar" },
+  { name: "Dinner Cruise Party", href: "/dinner" },
+  { name: "Adventure Water Sports", href: "/adventure" },
   { name: "About Us", href: "#whyus" },
   { name: "Contact Us", href: "#contact" },
 ];

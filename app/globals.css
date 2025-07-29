@@ -195,3 +195,10 @@ body {
   animation: scroll var(--animation-duration) linear infinite;
   animation-direction: var(--animation-direction);
 }
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

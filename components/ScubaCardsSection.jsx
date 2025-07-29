@@ -3,6 +3,52 @@ import { Card, CardContent } from "./ui/card";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
+const goaCombos = [
+  {
+    title: "DUDHSAGAR WATERFALLS TRIP COMBO",
+    subtitle: "Jeep Safari + Buffet + Churches + Spice Plantation",
+    oldPrice: "₹2,499",
+    newPrice: "₹1,799",
+    rating: "⭐ 4.7 (860+ reviews)",
+    features: [
+      "65+ km Journey to Dudhsagar Waterfalls via AC Multi Excel Volvo Bus",
+      "Free Pick and drop from your Hotel",
+      "Jeep Safari Through Jungle and Rivers till Dudhsagar",
+      "Forest Entry and Life Jackets included for swimming",
+      "Spice Plantation Guided Tour",
+      "Veg / Non-Veg Buffet Lunch at Spice Plantation",
+      "2 Complimentary Hard Drinks",
+      "Soft Drinks - Coca-Cola, Diet Coke, Sprite, Pepsi",
+      "Old Goa Church Visit",
+      "Bom Jesus Church Tour",
+    ],
+  },
+  {
+    title: "LUXURY DINNER CRUISE PARTY",
+    subtitle: "4 Hr Double Decker Cruise | Buffet + DJ + Celebrations",
+    oldPrice: "₹3,500",
+    newPrice: "₹3000",
+    rating: "⭐ 4.9 (1,120+ reviews)",
+    features: [
+      "Free Pick and Drop from Hotel",
+      "Welcome Drinks while On-Boarding",
+      "Unlimited Veg / Non-Veg Buffet Dinner",
+      "Jain Food Also Available",
+      "Casino Sightseeing: Big Daddy, Casino Pride, Deltin Jack, King's Casino",
+      "6–7 Types of Dance Performances",
+      "Couple Dance + Live Bollywood DJ",
+      "Mesmerizing Laser Light Show",
+      "Goan Folk & Portuguese Dances",
+      "Fun Games with Spot Prizes",
+      "2 Complimentary Drinks (alcoholic / non-alcoholic)",
+      "2 Starters + Bar Service (Beer, Vodka, Whiskey, Rum, Wine, Soft Drinks)",
+      "Special Birthday/Anniversary Celebration Arrangements",
+      "Pickup Time: 7:30 PM | Drop Time: 12:30 AM",
+    ],
+  },
+];
+
+
 export default function ScubaCardsSection() {
   return (
     <section className="relative w-full min-h-[130vh] bg-gradient-to-br from-blue-100 via-cyan-100 to-sky-200 text-gray-900 overflow-hidden py-24 px-12 md:px-4">
@@ -66,7 +112,7 @@ export default function ScubaCardsSection() {
         className="relative z-20 grid grid-cols-1 md:grid-cols-2 gap-20 justify-center items-center max-w-7xl mx-auto"
         style={{ perspective: "1000px" }}
       >
-        {[...Array(2)].map((_, idx) => (
+ {goaCombos.map((pkg, idx) => (
           <motion.div
             key={idx}
             whileHover={{ rotateX: 10, rotateY: -10, translateZ: 80, scale: 1.03 }}
@@ -74,30 +120,31 @@ export default function ScubaCardsSection() {
             transition={{ type: "spring", stiffness: 180, damping: 14 }}
             className="transform-style preserve-3d"
           >
-            <Card className="w-full md:w-[480px] min-h-[500px] bg-gradient-to-br from-white/60 to-cyan-100/60 backdrop-blur-xl border border-cyan-300/30 shadow-[0_0_20px_#67e8f9] hover:shadow-[0_0_40px_#22d3ee] transition-all duration-500 rounded-3xl overflow-hidden">
+            <Card className="w-full md:w-[480px] min-h-[550px] bg-gradient-to-br from-white/60 to-cyan-100/60 backdrop-blur-xl border border-cyan-300/30 shadow-[0_0_20px_#67e8f9] hover:shadow-[0_0_40px_#22d3ee] transition-all duration-500 rounded-3xl overflow-hidden">
               <CardContent className="flex flex-col gap-6 p-8">
                 <h2 className="text-2xl font-bold text-center text-cyan-800">
-                  {idx === 0
-                    ? "SCUBA DIVING AT ANDAMAN ISLAND"
-                    : "SCUBA DIVING AT NEIL ISLAND"}
+                  {pkg.title}
                 </h2>
                 <p className="text-base text-center text-cyan-700">
-                  {idx === 0
-                    ? "Best Scubadiving for Non-swimmers"
-                    : "Andaman & Nicobar Island"}
+                  {pkg.subtitle}
                 </p>
-                <div className="text-5xl font-bold text-center text-amber-500">
-                  {idx === 0 ? "₹5,500" : "₹6,000"}
+                <div className="flex items-center justify-center gap-4 text-center">
+                  <span className="text-red-500 line-through text-xl">{pkg.oldPrice}</span>
+                  <span className="text-green-600 text-3xl font-bold">{pkg.newPrice}</span>
                 </div>
-                <div className="text-center text-base text-cyan-800 space-y-1">
-                  <p>✅ {idx === 0 ? "North Bay Island" : "Neil Island"}, Andaman</p>
-                  <p>✅ NO Swimming Skills Required</p>
-                  <p>✅ Best For Beginners</p>
-                  <p>✅ Scuba diving At Andaman Island</p>
-                  <p>✅ Best For Beginners</p>
-                  <p>✅ Best For Beginners</p>
-                  <p>✅ Best For Beginners</p>
-                </div>
+                <p className="text-sm text-yellow-600 text-center">{pkg.rating}</p>
+                <ul className="list-disc list-inside text-sm text-gray-800 space-y-1">
+                  {pkg.features.map((feature, fIdx) => (
+                    <li key={fIdx}>{feature}</li>
+                  ))}
+                </ul>
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="mt-6 px-6 py-2 bg-cyan-600 hover:bg-cyan-500 text-white font-medium rounded-full shadow transition self-center"
+                >
+                  GET DETAILS
+                </motion.button>
               </CardContent>
             </Card>
           </motion.div>
