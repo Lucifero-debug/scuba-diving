@@ -27,12 +27,12 @@ export default function CruiseOptionsSection({
         <div className="absolute left-0 top-0 h-full w-12 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none" />
         <div className="absolute right-0 top-0 h-full w-12 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none" />
 
-        <div className="flex overflow-x-auto gap-6 px-4 md:px-8 no-scrollbar scroll-smooth snap-x snap-mandatory h-[400px] md:h-[450px] overflow-y-hidden">
+        <div className="flex overflow-x-auto gap-6 px-4 md:px-8 no-scrollbar scroll-smooth snap-x snap-mandatory h-[450px] md:h-[450px] overflow-y-hidden">
           {/* Cards will be rendered here */}
           {cards.map((card, i) => (
             <motion.div
               key={i}
-              className="w-[280px] md:w-[520px] snap-center shrink-0 bg-white/30 backdrop-blur-md border border-white/20 rounded-2xl p-4 shadow-lg transition-all hover:shadow-blue-300 hover:border-blue-400"
+              className="w-[280px] md:w-[520px] h-full snap-center shrink-0 bg-white/30 backdrop-blur-md border border-white/20 rounded-2xl p-4 shadow-lg transition-all hover:shadow-blue-300 hover:border-blue-400"
               whileHover={{ scale: 1.05 }}
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
