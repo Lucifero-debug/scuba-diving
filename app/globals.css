@@ -202,3 +202,8 @@ body {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+@media (max-height: 600px) {
+  html, body {
+    overflow-x: hidden;
+  }
+}
