@@ -51,9 +51,9 @@ const page = () => {
   ];
 
 const verticalSliderFeatures = [
-  { title: "Pickup & Drop Included", image: "https://img.freepik.com/free-photo/scooter-bike-parked-near-goa-beach-india_53876-142256.jpg" },
-  { title: "Morning & Afternoon Slots", image: "https://img.freepik.com/free-photo/morning-sea-boat-coastal-landscape-summer-nature-travel-background-generative-ai_188544-12635.jpg" },
-  { title: "Breakfast & Lunch Variants", image: "https://images.unsplash.com/photo-1624704974811-57a5f8bfb168" },
+  { title: "Pickup & Drop Included", image: "/adventure/pickup.webp" },
+  { title: "Morning & Afternoon Slots", image: "/adventure/morning.webp" },
+  { title: "Breakfast & Lunch Variants", image: "/adventure/breakfast.webp" },
   { title: "Unlimited Fun on Arabian Sea", image: "/adventure/arabian-view.webp" },
 ];
 
