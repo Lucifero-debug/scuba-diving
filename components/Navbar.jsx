@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Menu } from "lucide-react";
 import { useState } from "react";
 import InfoDrawer from "./InfoDrawer";
+import Image from "next/image";
 
 const navItems = [
   { name: "Home", href: "/" },
@@ -32,7 +33,9 @@ export default function Navbar() {
         whileHover={{ scale: 1.05 }}
         className="text-2xl font-bold text-cyan-600 tracking-wide"
       >
-        DiveXP
+        <div className="w-32 h-32 relative">
+          <Image src='/home/logo.jpg' fill className="object-contain"/>
+        </div>
       </motion.div>
 
       {/* Desktop Nav */}

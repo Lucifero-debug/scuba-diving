@@ -110,7 +110,7 @@ const page = () => {
     <div className="w-full flex justify-center px-4 py-10">
   <div className="flex flex-row flex-wrap justify-center items-start gap-10 max-w-[1440px]">
     {/* Left Image */}
-    <div className="relative w-[400px] h-[700px] rounded-2xl overflow-hidden shadow-lg">
+    <div className="relative w-full lg:w-[400px] h-[700px] rounded-2xl overflow-hidden shadow-lg">
       <Image
         src="/dudhsagar/dudhsagar.jpg"
         alt="Dudhsagar Waterfall"
