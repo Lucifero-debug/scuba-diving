@@ -7,8 +7,8 @@ const goaCombos = [
   {
     title: "DUDHSAGAR WATERFALLS TRIP COMBO",
     subtitle: "Jeep Safari + Buffet + Churches + Spice Plantation",
-    oldPrice: "₹2,499",
-    newPrice: "₹1,799",
+    oldPrice: "₹3000",
+    newPrice: "₹2700",
     rating: "⭐ 4.7 (860+ reviews)",
     features: [
       "65+ km Journey to Dudhsagar Waterfalls via AC Multi Excel Volvo Bus",
@@ -21,13 +21,14 @@ const goaCombos = [
       "Soft Drinks - Coca-Cola, Diet Coke, Sprite, Pepsi",
       "Old Goa Church Visit",
       "Bom Jesus Church Tour",
+      "For 4+ Group Discount Is 2500/-PP"
     ],
   },
   {
     title: "LUXURY DINNER CRUISE PARTY",
     subtitle: "4 Hr Double Decker Cruise | Buffet + DJ + Celebrations",
-    oldPrice: "₹3,500",
-    newPrice: "₹3000",
+    oldPrice: "₹2700",
+    newPrice: "₹2200",
     rating: "⭐ 4.9 (1,120+ reviews)",
     features: [
       "Free Pick and Drop from Hotel",
@@ -44,6 +45,7 @@ const goaCombos = [
       "2 Starters + Bar Service (Beer, Vodka, Whiskey, Rum, Wine, Soft Drinks)",
       "Special Birthday/Anniversary Celebration Arrangements",
       "Pickup Time: 7:30 PM | Drop Time: 12:30 AM",
+      "For Group Discount 4+ Guest is 2000/- PP",
     ],
   },
 ];
@@ -70,7 +72,7 @@ export default function ScubaCardsSection() {
       {/* Floating Light Orbs */}
       {[...Array(10)].map((_, i) => (
         <motion.div
-          key={i}
+          key={i}s
           className="absolute z-10 w-6 h-6 rounded-full bg-cyan-500/20 backdrop-blur-sm"
           initial={{ opacity: 0, y: 0, scale: 0.5 }}
           animate={{
@@ -135,7 +137,13 @@ export default function ScubaCardsSection() {
                 <p className="text-sm text-yellow-600 text-center">{pkg.rating}</p>
                 <ul className="list-disc list-inside text-sm text-gray-800 space-y-1">
                   {pkg.features.map((feature, fIdx) => (
-                    <li key={fIdx}>{feature}</li>
+                      <li key={fIdx}>
+      {feature.includes("Group Discount") ? (
+        <strong className='text-lg'>{feature}</strong>
+      ) : (
+        feature
+      )}
+    </li>
                   ))}
                 </ul>
                 <motion.button

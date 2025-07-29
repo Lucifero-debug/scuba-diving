@@ -202,7 +202,7 @@ body {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
-@media (max-height: 600px) {
+@media (max-height: 1000px) {
   html, body {
     overflow-x: hidden;
   }

@@ -17,8 +17,8 @@ const page = () => {
 {
   title: "LUXURY DINNER CRUISE PARTY COMBO",
   subtitle: "Double Decker Cruise + Buffet + Performances + Casino View",
-  oldPrice: "₹2,999",
-  newPrice: "₹2,199",
+  oldPrice: "₹2,700",
+  newPrice: "₹2,200",
   rating: "⭐ 4.8 (950+ reviews)",
   features: [
     "4 Hour Double Decker Luxury Cruise Ride on Mandovi River",
@@ -37,6 +37,7 @@ const page = () => {
     "Bar Service: Beer, Whiskey, Vodka, Rum, Wine & Soft Drinks",
     "Special Birthday / Anniversary Celebration Arrangements",
     "Pickup Time: 7:30 PM | Drop Time: 12:30 AM",
+    "For Group Discount 4+ Guest is ₹2,000/- PP",
   ],
 },
 
@@ -171,7 +172,13 @@ const dinnerCruiseBestFeatures = [
                 <p className="text-sm text-yellow-600 text-center">{goaCombos[0].rating}</p>
                 <ul className="list-disc list-inside text-sm text-gray-800 space-y-1">
                   {goaCombos[0].features.map((feature, fIdx) => (
-                    <li key={fIdx}>{feature}</li>
+                  <li key={fIdx}>
+      {feature.includes("Group Discount") ? (
+        <strong className='text-lg'>{feature}</strong>
+      ) : (
+        feature
+      )}
+    </li>
                   ))}
                 </ul>
                 <motion.button

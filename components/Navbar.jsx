@@ -9,7 +9,7 @@ import InfoDrawer from "./InfoDrawer";
 
 const navItems = [
   { name: "Home", href: "/" },
-  { name: "Goa Tour Packages", href: "#packages" },
+  { name: "Grand Island", href: "/grand" },
   { name: "Dudh Sagar Waterfall", href: "/dudhsagar" },
   { name: "Dinner Cruise Party", href: "/dinner" },
   { name: "Adventure Water Sports", href: "/adventure" },

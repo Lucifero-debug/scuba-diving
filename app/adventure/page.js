@@ -17,8 +17,8 @@ const page = () => {
     {
       title: "ADVENTURE BOAT PARTY COMBO",
       subtitle: "Island + Dolphin Show + Watersports + Breakfast/Lunch + Pickup",
-      oldPrice: "₹2,499",
-      newPrice: "₹1,899",
+      oldPrice: "₹2,500",
+      newPrice: "₹2,200",
       rating: "⭐ 4.7 (800+ reviews)",
       features: [
         "40+ Km Divar Island Sea Trip via Speed Boat",
@@ -30,6 +30,7 @@ const page = () => {
         "Pickup & Drop from Hotel (Pre-booked only)",
         "Morning Slot: 8:30 AM - 2:00 PM",
         "Afternoon Slot: 1:30 PM - 6:00 PM",
+        "For Group Discount 4+ Guest Is 2000/-"
       ],
     },
   ];
@@ -117,7 +118,13 @@ const verticalSliderFeatures = [
                 <p className="text-sm text-yellow-600 text-center">{adventureCombos[0].rating}</p>
                 <ul className="list-disc list-inside text-sm text-gray-800 space-y-1">
                   {adventureCombos[0].features.map((feature, fIdx) => (
-                    <li key={fIdx}>{feature}</li>
+                     <li key={fIdx}>
+      {feature.includes("Group Discount") ? (
+        <strong className='text-lg'>{feature}</strong>
+      ) : (
+        feature
+      )}
+    </li>
                   ))}
                 </ul>
                 <motion.button

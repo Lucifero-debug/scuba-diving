@@ -135,8 +135,8 @@ const page = () => {
             AC Bus Pickup, Jeep Safari, Forest Entry, Spice Plantation, Buffet & More!
           </p>
           <div className="flex items-center justify-center gap-4 text-center">
-            <span className="text-red-500 line-through text-xl">₹2499</span>
-            <span className="text-green-600 text-3xl font-bold">₹1599</span>
+            <span className="text-red-500 line-through text-xl">₹3000</span>
+            <span className="text-green-600 text-3xl font-bold">₹2700</span>
           </div>
           <p className="text-sm text-yellow-600 text-center">★ 4.8 | 850+ Reviews</p>
           <ul className="list-disc list-inside text-sm text-gray-800 space-y-1">
@@ -147,6 +147,7 @@ const page = () => {
             <li>Spice Plantation Guided Tour</li>
             <li>Buffet Lunch with Drinks</li>
             <li>Old Goa & Bom Jesus Church Visit</li>
+            <li><strong className='text-lg'>For 4+ Group Is 2500/-PP</strong></li>
           </ul>
           <motion.button
             whileHover={{ scale: 1.05 }}
