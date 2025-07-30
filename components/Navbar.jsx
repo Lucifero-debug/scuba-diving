@@ -7,6 +7,7 @@ import { Menu } from "lucide-react";
 import { useState } from "react";
 import InfoDrawer from "./InfoDrawer";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 const navItems = [
   { name: "Home", href: "/" },
@@ -14,12 +15,13 @@ const navItems = [
   { name: "Dudh Sagar Waterfall", href: "/dudhsagar" },
   { name: "Dinner Cruise Party", href: "/dinner" },
   { name: "Adventure Water Sports", href: "/adventure" },
-  { name: "About Us", href: "#whyus" },
-  { name: "Contact Us", href: "#contact" },
+  { name: "About Us", href: "/about" },
+  { name: "Contact Us", href: "/contact" },
 ];
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+const router=useRouter()
 
   return (
     <motion.nav
@@ -33,7 +35,7 @@ export default function Navbar() {
         whileHover={{ scale: 1.05 }}
         className="text-2xl font-bold text-cyan-600 tracking-wide"
       >
-     <div className="w-24 h-14 sm:w-28 sm:h-28 md:w-32 md:h-14 relative">
+     <div className="w-24 h-14 sm:w-28 sm:h-28 md:w-32 md:h-14 relative" onClick={() => router.push("/")}>
     <Image src="/home/logo-bg.png" fill className="object-cover" alt="Logo" />
   </div>
       </motion.div>

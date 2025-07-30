@@ -2,26 +2,27 @@
 import React from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { CanvasRevealEffect } from "@/components/ui/CanvasReveal";
-import { FaChalkboardTeacher, FaLaptopCode, FaRocket } from "react-icons/fa";
+import { FaUserTie, FaHeart, FaShieldAlt, FaUserFriends } from "react-icons/fa";
+
 
 const features = [
   {
-    title: "Planning And Strategy",
+    title: "Experienced & Certified Instructors",
     description:
-      "We'll collaborate to map out your website's goals, target audience, and key functionalities.",
-    icon: <FaChalkboardTeacher className="text-4xl md:text-5xl text-cyan-800" />,
+      "Dive with confidence under the guidance of professionals with years of training and certification.",
+    icon: <FaUserTie className="text-4xl md:text-5xl text-cyan-800" />,
     revealProps: {
-      animationSpeed: 5.1,
-      containerClassName: "bg-gradient-to-br from-cyan-200 via-teal-100 to-white",
+      animationSpeed: 4,
+      containerClassName: "bg-gradient-to-br from-cyan-100 via-teal-50 to-white",
     },
   },
   {
-    title: "Development & Updates",
+    title: "Personalized Dive Sessions",
     description:
-      "I cue my lofi playlist and dive into coding. From sketches to polished code, you stay updated.",
-    icon: <FaLaptopCode className="text-4xl md:text-5xl text-purple-700" />,
+      "We adapt each dive to your comfort and skill level, ensuring a unique underwater experience.",
+    icon: <FaUserFriends className="text-4xl md:text-5xl text-purple-700" />,
     revealProps: {
-      animationSpeed: 3,
+      animationSpeed: 3.5,
       containerClassName: "bg-gradient-to-br from-purple-100 via-pink-50 to-white",
       colors: [
         [216, 180, 254],
@@ -31,17 +32,29 @@ const features = [
     },
   },
   {
-    title: "Launch & Deployment",
+    title: "Top-Quality Equipment & Safety Standards",
     description:
-      "This is where the magic happens! Based on the approved design, I'll build your website from the ground up.",
-    icon: <FaRocket className="text-4xl md:text-5xl text-amber-600" />,
+      "We use high-end gear and follow international safety protocols to ensure a secure dive every time.",
+    icon: <FaShieldAlt className="text-4xl md:text-5xl text-amber-600" />,
     revealProps: {
       animationSpeed: 3,
       containerClassName: "bg-gradient-to-br from-sky-100 via-blue-50 to-white",
       colors: [[125, 211, 252]],
     },
   },
+  {
+    title: "Unmatched Customer Satisfaction",
+    description:
+      "Our happy customers speak for us — stellar reviews and memorable adventures guaranteed.",
+    icon: <FaHeart className="text-4xl md:text-5xl text-rose-500" />,
+    revealProps: {
+      animationSpeed: 3.5,
+      containerClassName: "bg-gradient-to-br from-rose-100 via-amber-50 to-white",
+      colors: [[252, 165, 165], [255, 251, 235]],
+    },
+  },
 ];
+
 
 export function Approach() {
   return (
@@ -126,7 +139,7 @@ const Card = ({ title, icon, children, description }) => {
             <h2 className="text-gray-800 text-xl md:text-2xl font-semibold mt-4 transition duration-300 drop-shadow-sm">
               {title}
             </h2>
-            <p className="text-sm md:text-base text-gray-600 mt-3 px-1">
+            <p className="text-sm md:text-base text-black mt-3 px-1">
               {description}
             </p>
           </>
