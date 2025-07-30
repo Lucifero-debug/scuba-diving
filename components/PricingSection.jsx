@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import { FaCheck } from 'react-icons/fa';
 
 const scubaPackages = [
   {
@@ -120,9 +121,9 @@ export default function ScubaSpecialLightSection() {
       <p className="text-green-600 text-3xl font-bold">{pkg.newPrice}</p>
               </div>
               <p className="text-sm mb-3 text-yellow-600">{pkg.rating}</p>
-              <ul className="list-disc list-inside text-md text-gray-700 space-y-1">
+              <ul className="list-inside text-md text-gray-700 space-y-1">
                 {pkg.features.map((feature, fIdx) => (
-        <li key={fIdx}>{feature}</li>
+        <li className='flex gap-3 leading-[24px] font-normal font-serif text-[15px]' key={fIdx}>  <FaCheck className="text-black mt-1" />{feature}</li>
       ))}
               </ul>
                   <motion.button

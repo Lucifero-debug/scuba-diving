@@ -35,7 +35,7 @@ const router=useRouter()
         whileHover={{ scale: 1.05 }}
         className="text-2xl font-bold text-cyan-600 tracking-wide"
       >
-     <div className="w-24 h-14 sm:w-28 sm:h-28 md:w-32 md:h-14 relative" onClick={() => router.push("/")}>
+     <div className="w-24 h-14 sm:w-28 sm:h-28 md:w-32 md:h-16 relative" onClick={() => router.push("/")}>
     <Image src="/home/logo-bg.png" fill className="object-cover" alt="Logo" />
   </div>
       </motion.div>
