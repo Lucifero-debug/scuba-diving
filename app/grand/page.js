@@ -202,7 +202,7 @@ const grandIslandCards = [
         title="Grand Island Combo"
         subtitle="The Most Complete Adventure Day in Goa"
         features={bestFeatures}
-        ctaText="BOOK GRAND ISLAND ADVENTURE"
+        ctaText="BOOK GRAND ISLAND"
         ctaLink="https://wa.me/919643784204?text=Hello%2C%20I'm%20interested%20in%20the%20Grand%20Island%20Tour%20Package"
         description="Dive into Goa’s best tour combo: Scuba, Dolphins, Water Sports, Food, Photos & Pickup — All at once!"
       />
