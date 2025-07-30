@@ -117,9 +117,6 @@ export default function ScubaCardsSection() {
  {goaCombos.map((pkg, idx) => (
           <motion.div
             key={idx}
-            whileHover={{ rotateX: 10, rotateY: -10, translateZ: 80, scale: 1.03 }}
-            whileTap={{ rotateY: 180, scale: 0.98, translateZ: 150, rotateX: -180 }}
-            transition={{ type: "spring", stiffness: 180, damping: 14 }}
             className="transform-style preserve-3d"
           >
             <Card className="w-full md:w-[480px] min-h-[550px] bg-gradient-to-br from-white/60 to-cyan-100/60 backdrop-blur-xl border border-cyan-300/30 shadow-[0_0_20px_#67e8f9] hover:shadow-[0_0_40px_#22d3ee] transition-all duration-500 rounded-3xl overflow-hidden">
