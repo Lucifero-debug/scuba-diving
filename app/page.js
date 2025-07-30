@@ -40,7 +40,7 @@ Are you planning an unforgettable scuba diving experience or thrilling water spo
 
 Whether you&apos;re a first-time diver or an adventure enthusiast, we tailor each experience to suit your comfort and skill level. We operate in some of India&apos;s top diving Destinations 
 
-We Promise You This — You Won&8apos;t Be Disappointed. 
+We Promise You This — You Won&apos;t Be Disappointed. 
 
 Dive In With Us, And Discover The Magic Beneath. <br></br>
 <a href="/about"><strong>Read More About Us</strong></a>

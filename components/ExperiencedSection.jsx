@@ -11,55 +11,55 @@ export default function ExperienceSection() {
       title: "SCUBA DIVING",
       subtitle: "Explore Underwater Life",
       image: "https://images.unsplash.com/photo-1682686581030-7fa4ea2b96c3?q=80&w=1170&auto=format&fit=crop",
-      icon: "/icons/divemask.svg",
+      icon: "/icons/divemask.jpg",
     },
     {
       title: "BANANA RIDE",
       subtitle: "Fun Group Ride @ ₹399",
       image: "https://images.unsplash.com/photo-1574159918085-47cec07597bb?w=600&auto=format&fit=crop",
-      icon: "/icons/banana.svg",
+      icon: "/icons/banana.webp",
     },
     {
       title: "PARASAILING",
       subtitle: "Sky-high Thrill",
       image: "https://images.unsplash.com/photo-1628690920311-a820459457ba?w=600&auto=format&fit=crop",
-      icon: "/icons/parasail.svg",
+      icon: "/icons/parasail.png",
     },
     {
       title: "JET SKI",
       subtitle: "Speed on Waves",
       image: "https://images.unsplash.com/photo-1554132267-d06483b00adc?q=80&w=1172&auto=format&fit=crop",
-      icon: "/icons/jetski.svg",
+      icon: "/icons/jetski.jpg",
     },
     {
       title: "SNORKELING",
       subtitle: "Swim with Coral Life",
       image: "https://images.unsplash.com/photo-1583364493238-248032147fbd?q=80&w=1074&auto=format&fit=crop",
-      icon: "/icons/snorkel.svg",
+      icon: "/icons/snorkelling.jpg",
     },
     {
       title: "GLASS BOAT",
       subtitle: "See the Sea Below",
       image: "https://plus.unsplash.com/premium_photo-1680831748352-3a6f45a3468e?w=600&auto=format&fit=crop",
-      icon: "/icons/glassboat.svg",
+      icon: "/icons/glassboat.jpg",
     },
     {
       title: "KAYAKING",
       subtitle: "Solo Paddle Adventure",
       image: "https://images.unsplash.com/photo-1480480565647-1c4385c7c0bf?q=80&w=1331&auto=format&fit=crop",
-      icon: "/icons/kayak.svg",
+      icon: "/icons/kayak.jpg",
     },
     {
       title: "FISHING TRIP",
       subtitle: "Catch & Relax",
       image: "https://plus.unsplash.com/premium_photo-1663040174476-280284ba9613?q=80&w=1170&auto=format&fit=crop",
-      icon: "/icons/fish.svg",
+      icon: "/icons/fishing.jpg",
     },
     {
       title: "SUNSET CRUISE",
       subtitle: "Evening Romance",
       image: "https://images.unsplash.com/photo-1578530332818-6ba472e67b9f?q=80&w=1172&auto=format&fit=crop",
-      icon: "/icons/cruise.svg",
+      icon: "/icons/cruise.jpg",
     },
   ];
 
@@ -117,7 +117,7 @@ export default function ExperienceSection() {
 
               {/* Icon Overlay */}
               <div className="absolute -top-2 right-6 bg-white border-4 border-gray-300 p-4 rounded-full z-20 shadow-md">
-                <Image src={card.icon} alt="icon" width={30} height={30} />
+                <Image src={card.icon} alt="icon" width={35} height={35} />
               </div>
             </Card>
           </motion.div>
