@@ -1,65 +1,122 @@
-  export const testimonials = [
-    {
-      quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
-    },
-    {
-      quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
-    },
-    {
-      quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
-    },
-    {
-      quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
-    },
-    {
-      quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
-    },
-  ];
-  
-  export const companies = [
-    {
-      id: 1,
-      name: "cloudinary",
-      img: "/cloud.svg",
-      nameImg: "/cloudName.svg",
-    },
-    {
-      id: 2,
-      name: "appwrite",
-      img: "/app.svg",
-      nameImg: "/appName.svg",
-    },
-    {
-      id: 3,
-      name: "HOSTINGER",
-      img: "/host.svg",
-      nameImg: "/hostName.svg",
-    },
-    {
-      id: 4,
-      name: "stream",
-      img: "/s.svg",
-      nameImg: "/streamName.svg",
-    },
-    {
-      id: 5,
-      name: "docker.",
-      img: "/dock.svg",
-      nameImg: "/dockerName.svg",
-    },
-  ];
+export const testimonials = [
+  {
+    quote: "Our Dudhsagar trip was nothing short of magical! The jeep safari, the waterfalls, and the spice plantation tour were well-planned. Highly recommend for nature lovers!",
+    name: "Aman Mehta",
+    title: "@aman_traveldiaries",
+    img: "https://randomuser.me/api/portraits/men/32.jpg",
+  },
+  {
+    quote: "Booked the dinner cruise with GoaTourPackages and it was the highlight of our honeymoon. Loved the DJ, the food, and the sunset view from the deck.",
+    name: "Simran Kaur",
+    title: "@simran.explorer",
+    img: "https://randomuser.me/api/portraits/women/65.jpg",
+  },
+  {
+    quote: "The Grand Island scuba diving experience exceeded all expectations! My instructor was so patient and calm. Loved the underwater video too.",
+    name: "Rahul Sharma",
+    title: "@rahuldivesdeep",
+    img: "https://randomuser.me/api/portraits/men/18.jpg",
+  },
+  {
+    quote: "I've been to Goa a few times, but this was the first time I truly *experienced* it. From parasailing to waterfall hikes — everything was seamless.",
+    name: "Ishita Rane",
+    title: "@ishitarane",
+    img: "https://randomuser.me/api/portraits/women/34.jpg",
+  },
+  {
+    quote: "Had a fantastic time on the Adventure Boat Party! The cold coffee in the morning slot was refreshing. Even got to see dolphins!",
+    name: "Karan Solanki",
+    title: "@karansolanki_24",
+    img: "https://randomuser.me/api/portraits/men/77.jpg",
+  },
+  {
+    quote: "Rock Island was surreal! Our group did the scuba + watersports combo, and everything was handled so professionally.",
+    name: "Meghna Desai",
+    title: "@meghna_journeys",
+    img: "https://randomuser.me/api/portraits/women/49.jpg",
+  },
+  {
+    quote: "Super organized team, and very helpful. We had some dietary preferences and they made sure we were comfortable throughout.",
+    name: "Aditya Nair",
+    title: "@aditya.nair",
+    img: "https://randomuser.me/api/portraits/men/27.jpg",
+  },
+  {
+    quote: "The cultural dance on the dinner cruise was amazing! My kids still talk about it. Goan hospitality at its best.",
+    name: "Rupal Vyas",
+    title: "@rupalexplores",
+    img: "https://randomuser.me/api/portraits/women/22.jpg",
+  },
+  {
+    quote: "I thought it would just be a typical boat ride, but it turned into the best Goa memory I've made. Highly recommend the Grand Island trip.",
+    name: "Shubham Singh",
+    title: "@shubhamgoesplaces",
+    img: "https://randomuser.me/api/portraits/men/55.jpg",
+  },
+  {
+    quote: "We booked the Dudhsagar + Spice Plantation package. Every detail was taken care of — from pickups to lunch. Stress-free and memorable.",
+    name: "Nikita Chauhan",
+    title: "@nikitachauhan.in",
+    img: "https://randomuser.me/api/portraits/women/61.jpg",
+  },
+  {
+    quote: "Perfect for a group trip! We did the full watersports combo — totally worth the price. Jet skiing was my favorite part!",
+    name: "Rajeev Thakur",
+    title: "@rajeevthakur",
+    img: "https://randomuser.me/api/portraits/men/45.jpg",
+  },
+  {
+    quote: "I travel solo often, and GoaTourPackages made me feel super safe and welcomed. Loved their Adventure Cruise recommendations.",
+    name: "Priya Verma",
+    title: "@wanderingverma",
+    img: "https://randomuser.me/api/portraits/women/36.jpg",
+  },
+  {
+    quote: "They even helped us with a last-minute pickup location change. Super responsive team!",
+    name: "Akash Yadav",
+    title: "@travelwithakash",
+    img: "https://randomuser.me/api/portraits/men/66.jpg",
+  },
+  {
+    quote: "Did the sunset cruise and it was breathtaking. The laser show and performances felt like a festival on the water!",
+    name: "Tanvi Kapoor",
+    title: "@tanvikapoor_23",
+    img: "https://randomuser.me/api/portraits/women/58.jpg",
+  },
+  {
+    quote: "Even the GoPro underwater shoot came out so clear. Got memories for life, thanks to their well-equipped diving team.",
+    name: "Mohit Arora",
+    title: "@mohit.arora_91",
+    img: "https://randomuser.me/api/portraits/men/38.jpg",
+  },
+  {
+    quote: "Goa isn’t just about beaches. This platform helped me discover the spice farms, ancient churches, and peaceful islands.",
+    name: "Anjali Nanda",
+    title: "@anjalinanda",
+    img: "https://randomuser.me/api/portraits/women/47.jpg",
+  },
+  {
+    quote: "Very punctual, which is rare in Goa tourism! Pickup was on time, guides were polite, and lunch was great too.",
+    name: "Neeraj Kumar",
+    title: "@neeraj_ontherun",
+    img: "https://randomuser.me/api/portraits/men/21.jpg",
+  },
+  {
+    quote: "The package was family-friendly. My parents enjoyed the plantation visit while the kids went for banana boat rides.",
+    name: "Shalini Sinha",
+    title: "@shalinitravels",
+    img: "https://randomuser.me/api/portraits/women/26.jpg",
+  },
+  {
+    quote: "Top-notch coordination and value for money. If you want to explore more than just Baga or Calangute, go with them.",
+    name: "Harshad Patel",
+    title: "@harshad.adventures",
+    img: "https://randomuser.me/api/portraits/men/50.jpg",
+  },
+  {
+    quote: "This was our anniversary trip and they even arranged a small cake on the cruise! Thoughtful and well executed.",
+    name: "Ayesha Khan",
+    title: "@ayesha.khan_xo",
+    img: "https://randomuser.me/api/portraits/women/14.jpg",
+  },
+];

@@ -1,12 +1,37 @@
+import Clients from '@/components/Clients'
+import ContactForm from '@/components/ContactForm'
+import TrustedBySection from '@/components/TrusetdBySection'
+import { Button } from '@/components/ui/button'
+import Image from 'next/image'
 import React from 'react'
 
 const page = () => {
   return (
-    <div className='w-full min-h-screen bg-white mt-20'>
-      <div className='first flex flex-col w-full items-center justify-center'>
-        <h1 className='text-[28px] font-semibold lg:text-[48px] text-center font-poppins'>Welcome to <br/>GoaSportsadventure.in - Your<br/> Gateway to the Enchanting<br/> Shores of Goa</h1>
-        <h2 className='text-[14px] font-light font-poppins lg:text-[24px]'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam voluptate, consequuntur aspernatur accusamus inventore sit laborum eius culpa.</h2>
+    <div className='w-full min-h-screen bg-white mt-20 flex flex-col gap-5 overflow-x-hidden'>
+      <div className='first flex flex-col w-full items-center gap-4 justify-center px-10'>
+        <h1 className='text-[28px] font-semibold lg:text-[48px] text-center font-poppins'>Step into<br/>GoaSportsAdventure.in Where Every Journey Begins on <br/>Goa&apos;s Enchanting Shores</h1>
+        <h2 className='text-[14px] text-center font-light font-poppins lg:text-[24px]'>At GoaSportsAdventure.in, we go beyond travel — we craft lasting memories that stay with you forever. Born from the passion of seasoned travelers and true Goan locals, our goal is to showcase the soul, charm, and energy of Goa to the world. We don&apos;t just offer tours; we curate immersive experiences that connect you with the heart of Goa — its golden beaches, lively markets, peaceful scenery, and pulse-pounding adventures.</h2>
+     <Button
+              type="submit"
+              className="w-full md:w-40 bg-cyan-600 cursor-pointer hover:bg-cyan-700 text-white font-semibold"
+            >
+              Chat With Us
+            </Button>
       </div>
+      <div className='border-2 border-black w-full h-[42vh] relative'>
+        <Image src='/home/about.jpg' fill className='object-cover'/>
+      </div>
+          <div className="promise w-full h-full flex flex-col items-center justify-center gap-4 px-10">
+        <h1 className='text-[28px] font-semibold lg:text-[48px] text-center font-poppins'>Our Journey</h1>
+        <h2 className='text-[14px] text-center font-light font-poppins lg:text-[24px]'>Driven by a deep love for exploration and Goa&apos;s rich charm, GoaTourPackages.co began as a humble initiative and has blossomed into one of the region&apos;s top travel specialists. With 10+ years of experience, our dedicated team designs personalized tour packages for every kind of traveler — from thrill-seekers and culture lovers to those in search of tranquility or romance.</h2>
+      </div>
+      <div className="promise w-full h-full flex flex-col items-center justify-center gap-4 px-10">
+        <h1 className='text-[28px] font-semibold lg:text-[48px] text-center font-poppins'>Our Promises</h1>
+        <h2 className='text-[14px] text-center font-light font-poppins lg:text-[24px]'>At GoaSportsAdventure.in, we&apos;re dedicated to offering more than just a vacation — we deliver experiences that embody the true spirit of Goa. From watching sunsets paint the Arabian Sea, to dancing through the buzzing nightlife, or uncovering the stories behind historic forts and sacred temples — we&apos;re here to make your adventure smooth, secure, and truly unforgettable.</h2>
+      </div>
+      <TrustedBySection/>
+      <Clients/>
+      <ContactForm/>
     </div>
   )
 }

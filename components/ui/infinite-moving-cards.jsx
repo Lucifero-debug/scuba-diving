@@ -84,7 +84,7 @@ export const InfiniteMovingCards = ({
                 </span>
                 <div className="relative z-20 mt-6 flex flex-row items-center gap-4">
                   <img
-                    src="https://images.unsplash.com/photo-1631208700519-72597dcf7d4d?w=600&auto=format&fit=crop&q=60"
+                    src={item.img}
                     alt="profile"
                     className="w-12 h-12 md:w-16 md:h-16 object-cover rounded-full border-2 border-white shadow-md"
                   />
