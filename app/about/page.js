@@ -7,7 +7,7 @@ import React from 'react'
 
 const page = () => {
   return (
-    <div className='w-full min-h-screen bg-white mt-20 flex flex-col gap-5 overflow-x-hidden'>
+    <div className='w-full min-h-screen bg-white mt-20 flex flex-col gap-5 overflow-hidden'>
       <div className='first flex flex-col w-full items-center gap-4 justify-center px-10'>
         <h1 className='text-[28px] font-semibold lg:text-[48px] text-center font-poppins'>Step into<br/>GoaSportsAdventure.in Where Every Journey Begins on <br/>Goa&apos;s Enchanting Shores</h1>
         <h2 className='text-[14px] text-center font-light font-poppins lg:text-[24px]'>At GoaSportsAdventure.in, we go beyond travel — we craft lasting memories that stay with you forever. Born from the passion of seasoned travelers and true Goan locals, our goal is to showcase the soul, charm, and energy of Goa to the world. We don&apos;t just offer tours; we curate immersive experiences that connect you with the heart of Goa — its golden beaches, lively markets, peaceful scenery, and pulse-pounding adventures.</h2>
