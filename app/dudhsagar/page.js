@@ -10,6 +10,7 @@ import VerticalCardSlider from '@/components/VerticalScrollCards';
 import BestServiceSection from '@/components/BestServiceSection';
 import { Bus, Trees, Salad, ShieldCheck, Mountain, Users } from "lucide-react";
 import ContactForm from '@/components/ContactForm';
+import { FaCheck } from 'react-icons/fa';
 
 const dudhsagarCards = [
   {
@@ -137,14 +138,14 @@ const page = () => {
           </div>
           <p className="text-sm text-yellow-600 text-center">★ 4.8 | 850+ Reviews</p>
           <ul className="list-disc list-inside text-sm text-gray-800 space-y-1">
-            <li>AC Multi Excel Volvo Bus Journey</li>
-            <li>Hotel Pickup & Drop</li>
-            <li>Jungle Jeep Safari</li>
-            <li>Forest Entry + Life Jackets</li>
-            <li>Spice Plantation Guided Tour</li>
-            <li>Buffet Lunch with Drinks</li>
-            <li>Old Goa & Bom Jesus Church Visit</li>
-            <li><strong className='text-lg'>For 4+ Group Is 2500/-PP</strong></li>
+            <li  className="flex gap-3 leading-[24px] font-normal font-serif text-[15px] text-gray-800"> <FaCheck className="text-black mt-[5px]" />AC Multi Excel Volvo Bus Journey</li>
+            <li  className="flex gap-3 leading-[24px] font-normal font-serif text-[15px] text-gray-800"> <FaCheck className="text-black mt-[5px]" />Hotel Pickup & Drop</li>
+            <li  className="flex gap-3 leading-[24px] font-normal font-serif text-[15px] text-gray-800"> <FaCheck className="text-black mt-[5px]" />Jungle Jeep Safari</li>
+            <li  className="flex gap-3 leading-[24px] font-normal font-serif text-[15px] text-gray-800"> <FaCheck className="text-black mt-[5px]" />Forest Entry + Life Jackets</li>
+            <li  className="flex gap-3 leading-[24px] font-normal font-serif text-[15px] text-gray-800"> <FaCheck className="text-black mt-[5px]" />Spice Plantation Guided Tour</li>
+            <li  className="flex gap-3 leading-[24px] font-normal font-serif text-[15px] text-gray-800"> <FaCheck className="text-black mt-[5px]" />Buffet Lunch with Drinks</li>
+            <li  className="flex gap-3 leading-[24px] font-normal font-serif text-[15px] text-gray-800"> <FaCheck className="text-black mt-[5px]" />Old Goa & Bom Jesus Church Visit</li>
+            <li  className="flex gap-3 leading-[24px] font-normal font-serif text-[15px] text-gray-800"> <strong className='text-lg'>For 4+ Group Is 2500/-PP</strong></li>
           </ul>
           <motion.button
             whileHover={{ scale: 1.05 }}

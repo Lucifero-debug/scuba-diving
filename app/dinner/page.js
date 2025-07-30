@@ -11,6 +11,7 @@ import BestServiceSection from '@/components/BestServiceSection'
 import VerticalCardSlider from '@/components/VerticalScrollCards'
 import { Timer, Music, Disc3, Star, BadgeCheck, Users } from "lucide-react";
 import ContactForm from '@/components/ContactForm'
+import { FaCheck } from 'react-icons/fa'
 
 const page = () => {
   const goaCombos = [
@@ -169,11 +170,14 @@ const dinnerCruiseBestFeatures = [
                 <p className="text-sm text-yellow-600 text-center">{goaCombos[0].rating}</p>
                 <ul className="list-disc list-inside text-sm text-gray-800 space-y-1">
                   {goaCombos[0].features.map((feature, fIdx) => (
-                  <li key={fIdx}>
+                  <li className="flex gap-3 leading-[24px] font-normal font-serif text-[15px] text-gray-800" key={fIdx}>
       {feature.includes("Group Discount") ? (
         <strong className='text-lg'>{feature}</strong>
       ) : (
-        feature
+        <>
+             <FaCheck className="text-black mt-[5px]" />
+        {feature}
+        </>
       )}
     </li>
                   ))}

@@ -11,6 +11,7 @@ import VerticalCardSlider from '@/components/VerticalScrollCards';
 import DinnerCruiseHero from '@/components/DinnerCruiseHero';
 import CruiseOptionsSection from '@/components/CruiseOptions';
 import LuxuryDinnerCruiseSetion from '@/components/LuxuryCruisesection';
+import { FaCheck } from 'react-icons/fa';
 
 const page = () => {
   const grandIsland = {
@@ -166,7 +167,7 @@ const grandIslandCards = [
                 <p className="text-sm text-yellow-600 text-center">{grandIsland.rating}</p>
                 <ul className="list-disc list-inside text-sm text-gray-800 space-y-1">
                   {grandIsland.features.map((feature, idx) => (
-                    <li key={idx}>{feature}</li>
+                    <li className="flex gap-3 leading-[24px] font-normal font-serif text-[15px] text-gray-800" key={idx}>   <FaCheck className="text-black mt-[5px]" />{feature}</li>
                   ))}
                 </ul>
                 <motion.button
