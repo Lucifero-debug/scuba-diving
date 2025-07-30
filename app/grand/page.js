@@ -149,7 +149,7 @@ const grandIslandCards = [
       <div className="w-full flex justify-center px-4 py-10">
         <div className="flex flex-col lg:flex-row justify-center items-start gap-10 max-w-[1440px]">
           <div className="relative w-full lg:w-[400px] h-[700px] rounded-2xl overflow-hidden shadow-lg">
-            <Image src="/grand/vertical.jpg" alt="Grand Island" fill className="object-cover" />
+            <Image src="/grand/poster.jpg" alt="Grand Island" fill className="object-cover" />
           </div>
 
           <motion.div
