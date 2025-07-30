@@ -28,14 +28,14 @@ const router=useRouter()
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.7, ease: "easeOut" }}
-      className="w-full z-50 fixed top-0 max-w-screen bg-white/80 backdrop-blur-md px-6 py-4 flex items-center justify-between border-b border-gray-200 shadow-md"
+      className="w-full z-50 fixed top-0 max-w-screen bg-white/80 backdrop-blur-md px-6 flex items-center justify-between border-b border-gray-200 shadow-md"
     >
       {/* Logo */}
       <motion.div
         whileHover={{ scale: 1.05 }}
         className="text-2xl font-bold text-cyan-600 tracking-wide"
       >
-     <div className="w-24 h-14 sm:w-28 sm:h-28 md:w-32 md:h-16 relative" onClick={() => router.push("/")}>
+     <div className="w-24 h-20 sm:w-28 sm:h-28 md:w-32 md:h-20 relative" onClick={() => router.push("/")}>
     <Image src="/home/logo-bg.png" fill className="object-cover" alt="Logo" />
   </div>
       </motion.div>
