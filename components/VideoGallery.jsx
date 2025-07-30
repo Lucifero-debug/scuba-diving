@@ -57,29 +57,10 @@ const videos = [
 
 const cols = 3; // Grid columns (same as md:grid-cols-3)
 
-const angleFromPosition = (index) => {
-  const row = Math.floor(index / cols);
-  const col = index % cols;
 
-  // Angle X (based on row)
-  const angleX = (row - 1) * 20; // e.g., top = -10, middle = 0, bottom = +10
-
-  // Angle Y (based on column)
-  const angleY = (col - 1) * 30; // e.g., left = -15, center = 0, right = +15
-
-  // Optional: Slight twist in Z to make cards "pop" more
-  const angleZ = (col - 1) * 15 + (row - 1) * 10;
-
-  return { angleX, angleY, angleZ };
-};
 
 const getFloatRotation = (idx) => {
-  const { angleX, angleY, angleZ } = angleFromPosition(idx);
   return {
-    rotateX: [angleX, angleX + 2, angleX],
-    rotateY: [angleY, angleY - 2, angleY],
-    rotateZ: [angleZ, angleZ + 1, angleZ],
-    translateZ: [angleZ, angleZ + 5, angleZ],
     transition: {
       repeat: Infinity,
       repeatType: "mirror",
@@ -95,13 +76,12 @@ export default function VideoGallery() {
 
   return (
     <div
-  className={`relative z-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-16 px-6 py-6 md:py-12  mb-16 transition-all duration-700`}
+  className={`relative z-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-16 px-6 md:py-12  mb-16 transition-all duration-700`}
   style={{ perspective: "1800px", minHeight: "120vh" }}
 >
 
       {videos.map((video, idx) => {
         const isPlaying = playing === idx;
-const { angleX, angleY, angleZ } = angleFromPosition(idx);
 
         const offset = playing !== null && playing !== idx ? 100 : 0;
 
@@ -111,16 +91,7 @@ const { angleX, angleY, angleZ } = angleFromPosition(idx);
             onClick={() => {
               if (!isPlaying) setPlaying(idx);
             }}
-            whileHover={
-              isPlaying
-                ? {}
-                : { rotateX: angleX / 2, rotateY: angleY / 2, scale: 1.04, translateZ:angleZ }
-            }
-            whileTap={
-              isPlaying
-                ? { scale: 0.98 }
-                : { scale: 0.92, rotateX: angleX, rotateY: angleY }
-            }
+
             whileInView={
     isPlaying
       ? {
@@ -132,10 +103,6 @@ const { angleX, angleY, angleZ } = angleFromPosition(idx);
         }
       : {
           opacity: 1,
-          scale: 1.05,
-          rotateX: angleX,
-          rotateY: angleY,
-          translateZ: angleZ,
           z: 100,
         }
   }
@@ -151,8 +118,6 @@ const { angleX, angleY, angleZ } = angleFromPosition(idx);
       : {
           opacity: 0,
           y: 100,
-          rotateX: 25,
-          rotateY: -25,
           scale: 0.95,
         }
   }
