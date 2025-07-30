@@ -33,8 +33,8 @@ export default function Navbar() {
         whileHover={{ scale: 1.05 }}
         className="text-2xl font-bold text-cyan-600 tracking-wide"
       >
-     <div className="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-14 relative">
-    <Image src="/home/logo-bg.png" fill className="object-contain" alt="Logo" />
+     <div className="w-24 h-14 sm:w-28 sm:h-28 md:w-32 md:h-14 relative">
+    <Image src="/home/logo-bg.png" fill className="object-cover" alt="Logo" />
   </div>
       </motion.div>
 

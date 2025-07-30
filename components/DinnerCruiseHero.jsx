@@ -13,7 +13,7 @@ export default function DinnerCruiseHero({
   descriptionList,
 }) {
   return (
-    <section className="relative pt-32 md:pt-0 w-full min-h-[100vh] flex items-center justify-center overflow-hidden">
+    <section className="relative mt-20 pt-32 md:pt-0 w-full min-h-[100vh] flex items-center justify-center overflow-hidden">
       {/* Background Image with Overlay */}
       <Image
         src={backgroundImage}
