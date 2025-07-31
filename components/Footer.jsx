@@ -55,7 +55,7 @@ export default function Footer() {
 
       {/* Bottom row */}
       <div className="text-sm text-gray-500 text-center">
-        © {new Date().getFullYear()} Goa Tour Packages. All rights reserved.
+        © {new Date().getFullYear()} Goa Sports Adventures All Rights Reserved.
       </div>
     </motion.footer>
   );

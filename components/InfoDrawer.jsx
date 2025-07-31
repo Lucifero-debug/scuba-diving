@@ -37,7 +37,7 @@ export default function InfoDrawer() {
           {/* Hero Image Section */}
           <div className="relative w-full h-[30vh] sm:h-[35vh] md:h-[40vh] rounded-b-2xl overflow-hidden">
             <Image
-              src="https://images.unsplash.com/photo-1635599814672-4187bb8fd8dd?w=600&auto=format&fit=crop&q=60"
+              src="/home/contact.jpg"
               fill
               alt="Scuba Dive"
               className="object-cover"
