@@ -43,6 +43,13 @@ export function First() {
 
   const [index, setIndex] = useState(0);
 
+    const handleExploreClick = () => {
+    const el = document.getElementById("pricing");
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   // Sync index with autoplay duration
   useEffect(() => {
     const interval = setInterval(() => {
@@ -65,7 +72,7 @@ export function First() {
         <p className="text-lg md:text-2xl text-white mt-2 max-w-xl leading-relaxed">
           {texts[index].description}
         </p>
-        <button className="px-4 py-2 backdrop-blur-sm border bg-white/10 border-white/30 text-white text-center rounded-full mt-6">
+        <button onClick={handleExploreClick} className="px-4 cursor-pointer py-2 backdrop-blur-sm border bg-white/10 border-white/30 text-white text-center rounded-full mt-6">
           Explore Now →
         </button>
       </motion.div>

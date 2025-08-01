@@ -167,8 +167,8 @@ const page = () => {
       heading="Experience Goa's Natural Marvel"
       description="Enjoy a thrilling Jeep Safari, scenic waterfalls, cultural spice plantation, buffet lunch, and visits to Old Goa churches — all in one power-packed day!"
       callLabel="Limited Spots Available – Call Now"
-      phoneNumber="+91 98765 43210"
-      whatsappLink="https://wa.me/919876543210"
+      phoneNumber="+91 96437 84204"
+      whatsappLink="https://wa.me/919643784204?text=Hello%2C%20I'm%20interested%20in%20the%20Dudhsagar%20Waterfalls%20Tour%20Package"
       scrollCardComponent={
         <VerticalCardSlider features={dudhsagarFeatures} intervalMs={4000} />
       }

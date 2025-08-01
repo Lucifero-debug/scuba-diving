@@ -191,8 +191,8 @@ const grandIslandCards = [
   heading="Your Ultimate Day Out in Goa"
   description="A thrilling 65+ km speed boat sea trip to Grand Island with scuba diving, dolphin show, full watersports combo, buffet meals, GoPro shoot, and free hotel transfers!"
   callLabel="Seats Filling Fast – Call to Book"
-  phoneNumber="+91 98765 43210"
-  whatsappLink="https://wa.me/919876543210"
+  phoneNumber="+9196437 84204"
+  whatsappLink="https://wa.me/919643784204?text=Hello%2C%20I'm%20interested%20in%20the%20Dudhsagar%20Grand%Island%20Tour%20Package"
   scrollCardComponent={
     <VerticalCardSlider features={grandIslandFeatures} intervalMs={4000} />
   }

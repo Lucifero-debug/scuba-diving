@@ -202,8 +202,8 @@ const dinnerCruiseBestFeatures = [
       heading="All-In-One Luxury Celebration on Sea"
       description="Enjoy a magical 4-hour evening on Goa’s only double-decker dinner cruise. From hotel pickup, welcome drinks, and buffet to casino views, DJ, folk dance, laser show, and celebration arrangements — this is the ultimate Goan experience!"
       callLabel="Call to Book Your Cruise"
-      phoneNumber="+91 98765 43210"
-      whatsappLink="https://wa.me/919876543210?text=I%20want%20to%20book%20the%20Dinner%20Cruise"
+      phoneNumber="+91 96437 84204"
+      whatsappLink="https://wa.me/+919643784204?text=I%20want%20to%20book%20the%20Dinner%20Cruise"
       scrollCardComponent={
         <VerticalCardSlider features={dinnerCruiseFeatures} intervalMs={4000} />
       }

@@ -150,7 +150,7 @@ const verticalSliderFeatures = [
         description="Join us for Goa's most exciting sea trip: from thrilling speed boat rides and dolphin spotting to a full combo of watersports and delicious food!"
         callLabel="Book Your Adventure Now"
         phoneNumber="+91 96437 84204"
-        whatsappLink="https://wa.me/919876543210?text=I%20want%20to%20book%20Adventure%20Boat%20Party"
+        whatsappLink="https://wa.me/919643784204?text=I%20want%20to%20book%20Adventure%20Boat%20Party"
         scrollCardComponent={
           <VerticalCardSlider features={verticalSliderFeatures} intervalMs={4000} />
         }

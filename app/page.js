@@ -55,7 +55,9 @@ Dive In With Us, And Discover The Magic Beneath. <br></br>
 </div>
 
 <ExperienceSection/>
+<div id="pricing">
 <PricingSection/>
+</div>
 <ScubaCardsSection/>
 <WhyChooseUsSection/>
 <Clients/>
