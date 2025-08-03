@@ -5,7 +5,7 @@ import React from "react";
 
 export default function HeaderWithLightReveal() {
   return (
-    <div className="relative w-full py-20 text-center overflow-hidden bg-gradient-to-b from-blue-100 via-white to-blue-50">
+    <div className="relative w-full py-14 text-center overflow-hidden bg-gradient-to-b from-blue-100 via-white to-blue-50">
       {/* Text */}
       <h1 className="relative inline-block text-4xl sm:text-6xl md:text-7xl font-extrabold text-slate-800 tracking-wide">
         Try the Ultimate Experience

@@ -11,7 +11,7 @@ export default function BestServiceSection({
   ctaLink,
 }) {
   return (
-    <section className="w-full bg-white py-20 px-6 md:px-16 flex flex-col items-center text-center overflow-hidden relative">
+    <section className="w-full bg-white py-14 px-6 md:px-16 flex flex-col items-center text-center overflow-hidden relative">
       <motion.h2
         initial={{ opacity: 0, y: -40 }}
         animate={{ opacity: 1, y: 0 }}

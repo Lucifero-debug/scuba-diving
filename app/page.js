@@ -2,13 +2,13 @@ import BestServiceSection from "@/components/BestService";
 import Carousel from "@/components/Carousel";
 import Clients from "@/components/Clients";
 import ExperienceSection from "@/components/ExperiencedSection";
+import FaqAccordion from "@/components/Faq";
 import { First } from "@/components/First";
 import HeaderWithLightReveal from "@/components/HeaderLightReveal";
 import PricingSection from "@/components/PricingSection";
 import ScubaCardsSection from "@/components/ScubaCardsSection";
-import VideoGallery from "@/components/VideoGallery";
+import ScubaCtaSection from "@/components/ScubaCtaSection";
 import WhyChooseUsSection from "@/components/WhyChooseUs";
-import Image from "next/image";
 
 export default function Home() {
   return (
@@ -62,9 +62,8 @@ Dive In With Us, And Discover The Magic Beneath. <br></br>
 <WhyChooseUsSection/>
 <Clients/>
 <HeaderWithLightReveal/>
-<div className="h-24 md:h-16" />
-<VideoGallery/>
-<div className="h-64 md:h-44" />
+<FaqAccordion/>
+<ScubaCtaSection/>
 <BestServiceSection/>
     </div>
   );
