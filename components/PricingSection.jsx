@@ -99,6 +99,7 @@ export default function ScubaSpecialLightSection() {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           className="px-8 py-3 cursor-pointer bg-cyan-600 hover:bg-cyan-500 text-white font-semibold rounded-full shadow-lg transition"
+          onClick={() => window.scrollBy({ top: 800, behavior: "smooth" })}
         >
           GOA ALL PACKAGES
         </motion.button>

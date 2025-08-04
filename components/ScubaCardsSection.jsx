@@ -85,11 +85,9 @@ export default function ScubaSpecialLightSection() {
         viewport={{ once: true }}
         className="text-center mt-6"
       >
-        <Link href="/andaman">
-          <button className="px-8 py-3 rounded-full bg-slate-700 text-white text-lg font-semibold hover:bg-slate-600 transition">
+          <button className="px-8 py-3 rounded-full bg-slate-700 text-white text-lg font-semibold hover:bg-slate-600 transition cursor-pointer" onClick={() => window.scrollBy({ top: 800, behavior: "smooth" })}>
             ANDAMAN ALL ACTIVITIES
           </button>
-        </Link>
       </motion.div>
 
       {/* Cards */}
