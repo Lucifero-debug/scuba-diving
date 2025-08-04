@@ -202,8 +202,8 @@ const dinnerCruiseBestFeatures = [
       heading="All-In-One Luxury Celebration on Sea"
       description="Enjoy a magical 4-hour evening on Goa’s only double-decker dinner cruise. From hotel pickup, welcome drinks, and buffet to casino views, DJ, folk dance, laser show, and celebration arrangements — this is the ultimate Goan experience!"
       callLabel="Call to Book Your Cruise"
-      phoneNumber="+91 96437 84204"
-      whatsappLink="https://wa.me/+919643784204?text=I%20want%20to%20book%20the%20Dinner%20Cruise"
+      phoneNumber="+91 76784 64517"
+      whatsappLink="https://wa.me/+917678464517?text=I%20want%20to%20book%20the%20Dinner%20Cruise"
       scrollCardComponent={
         <VerticalCardSlider features={dinnerCruiseFeatures} intervalMs={4000} />
       }
@@ -214,7 +214,7 @@ const dinnerCruiseBestFeatures = [
       subtitle="Enjoy the Ultimate Party on the Sea"
       features={dinnerCruiseBestFeatures}
       ctaText={"BOOK YOUR DINNER CRUISE"}
-         ctaLink="https://wa.me/919643784204?text=Hello%2C%20I'm%20interested%20in%20the%20Dinner%20Cruise%20Tour%20Package"
+         ctaLink="https://wa.me/917678464517?text=Hello%2C%20I'm%20interested%20in%20the%20Dinner%20Cruise%20Tour%20Package"
       description="Hop aboard our Luxury Dinner Cruise in Goa – the perfect evening for families, couples, and groups with buffet, music, performances, and more!"
     />
     <ContactForm/>

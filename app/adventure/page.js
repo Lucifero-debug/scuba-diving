@@ -149,8 +149,8 @@ const verticalSliderFeatures = [
         heading="All-In-One Adventure on Arabian Sea"
         description="Join us for Goa's most exciting sea trip: from thrilling speed boat rides and dolphin spotting to a full combo of watersports and delicious food!"
         callLabel="Book Your Adventure Now"
-        phoneNumber="+91 96437 84204"
-        whatsappLink="https://wa.me/919643784204?text=I%20want%20to%20book%20Adventure%20Boat%20Party"
+        phoneNumber="+91 76784 64517"
+        whatsappLink="https://wa.me/917678464517?text=I%20want%20to%20book%20Adventure%20Boat%20Party"
         scrollCardComponent={
           <VerticalCardSlider features={verticalSliderFeatures} intervalMs={4000} />
         }
@@ -161,7 +161,7 @@ const verticalSliderFeatures = [
         subtitle="Explore, Ride, Splash & Celebrate"
         features={adventureBestFeatures}
         ctaText={"BOOK YOUR ADVENTURE NOW"}
-        ctaLink={"https://wa.me/919643784204?text=Hello%2C%20I'm%20interested%20in%20the%20Adventure%20Boat%20Party%20Tour%20Package"}
+        ctaLink={"https://wa.me/917678464517?text=Hello%2C%20I'm%20interested%20in%20the%20Adventure%20Boat%20Party%20Tour%20Package"}
         description="Thrilling rides, dolphin shows, watersports, and delicious meals — all in one ultimate sea adventure!"
       />
       <ContactForm/>

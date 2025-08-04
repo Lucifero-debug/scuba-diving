@@ -19,7 +19,7 @@ export default function Footer() {
         {/* Column 1 - Logo */}
         <div className="space-y-2">
           <h2 className="text-3xl font-bold tracking-wider text-cyan-600">
-            Goa Tour Packages
+            Goa Sports Adventure
           </h2>
           <p className="text-sm text-gray-600">
             Explore the deep. Experience the thrill.
@@ -46,7 +46,7 @@ export default function Footer() {
           <h3 className="text-xl font-semibold text-cyan-700">Get In Touch</h3>
           <ul className="space-y-1 text-gray-700 text-sm">
             <li>Azhankhan8542@gmail.com</li>
-            <li>+91 96437 84204</li>
+            <li>+91 76784 64517</li>
           </ul>
         </div>
       </div>

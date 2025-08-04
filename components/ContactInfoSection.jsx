@@ -20,7 +20,7 @@ const contactItems = [
   {
     title: "PHONE",
     subtitle: "FOR MOBILE FANS",
-    content: <>Call Us On: 9643784204</>,
+    content: <>Call Us On: 7678464517</>,
     action: "CALL US",
     icon: <PhoneCall className="h-10 w-10 text-yellow-600" />,
   },

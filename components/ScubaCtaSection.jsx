@@ -12,7 +12,7 @@ export default function ScubaCtaSection() {
           Dive into an extraordinary world
         </h2>
         <p className="text-gray-600 mb-6">
-          Book your ultimate adventure with Scuba Goa Dive Centre today and create memories that will last a lifetime.
+          Book your ultimate adventure with Goa Sports Adventure today and create memories that will last a lifetime.
         </p>
         <a
           href="https://wa.me/919643784204?text=Hello%2C%20I'm%20interested%20in%20the%20travel%20package"

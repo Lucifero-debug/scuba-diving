@@ -11,28 +11,39 @@ import toast from "react-hot-toast";
 const ContactForm = () => {
   const form = useRef(null);
 
-  const sendEmail = (e) => {
-    e.preventDefault();
-    alert("Form is submitting");
-    // if (!form.current) return;
-    emailjs
-      .sendForm(
-        "service_19txf42", // replace with your actual EmailJS service ID
-        "template_kw2syrq", // replace with your actual template ID
-        form.current,
-        "WPj9Pa4h4WjYlHMqf" // replace with your actual public key
-      )
-      .then(
-       (result) => {
-    console.log("SUCCESS!", result.text);
-    toast.success("Form submitted successfully!");
-  },
-  (error) => {
-    console.log("FAILED...", error.text);
-    toast.error("Something went wrong, try again.");
-  }
-      );
+const sendEmail = async (e) => {
+  e.preventDefault();
+
+  const formData = new FormData(form.current);
+  const data = {
+    name: formData.get("name"),
+    email: formData.get("email"),
+    phone: formData.get("phone"),
+    date: formData.get("date"),
+    persons: formData.get("persons"),
+    message: formData.get("message"),
+    packageType: formData.getAll("packageType"),
+    activities: formData.getAll("activities"),
   };
+
+  try {
+    const res = await fetch("/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data),
+    });
+
+    if (res.ok) {
+      toast.success("Form submitted successfully!");
+      form.current.reset();
+    } else {
+      toast.error("Something went wrong. Try again.");
+    }
+  } catch (err) {
+    console.error(err);
+    toast.error("Something went wrong. Try again.");
+  }
+};
 
   return (
     <motion.div
