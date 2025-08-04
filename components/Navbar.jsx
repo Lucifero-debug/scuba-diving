@@ -56,7 +56,7 @@ const router=useRouter()
 
       {/* Call to Action */}
       <div className="hidden md:flex items-center gap-2">
-    <a href="https://wa.me/919643784204?text=I%20want%20to%20enquire%20about%20your%20tour%20packages" className="bg-cyan-500 hover:bg-cyan-400 text-white font-semibold shadow-md rounded-full px-6 py-2">
+    <a href="https://wa.me/+917678464517?text=I%20want%20to%20enquire%20about%20your%20Sports%20packages" className="bg-cyan-500 hover:bg-cyan-400 text-white font-semibold shadow-md rounded-full px-6 py-2">
   Enquire Now
 </a>
 
