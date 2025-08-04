@@ -63,7 +63,7 @@ export default function InfoDrawer() {
           <h2 className="text-2xl font-semibold text-gray-900">Contact Info</h2>
           <p>⚲ Calangute Circle, Goa</p>
           <p>⚲ Port Blair Andaman Island</p>
-          <p>☏ +91 96437 84204</p>
+          <p>☏ +91 76784 64517</p>
           <p className="text-cyan-600 mt-4 text-md md:text-base font-medium">
            ✉︎ Azhankhan8542@gmail.com
           </p>

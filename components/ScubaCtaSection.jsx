@@ -15,7 +15,7 @@ export default function ScubaCtaSection() {
           Book your ultimate adventure with Goa Sports Adventure today and create memories that will last a lifetime.
         </p>
         <a
-          href="https://wa.me/919643784204?text=Hello%2C%20I'm%20interested%20in%20the%20travel%20package"
+          href="https://wa.me/917678464517?text=Hello%2C%20I'm%20interested%20in%20the%20travel%20package"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block bg-green-600 hover:bg-green-700 text-white font-medium py-3 px-6 rounded-full transition-colors"
