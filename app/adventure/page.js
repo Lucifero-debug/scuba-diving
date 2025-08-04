@@ -12,6 +12,7 @@ import VerticalCardSlider from '@/components/VerticalScrollCards'
 import { Timer, Music, Disc3, Star, BadgeCheck, Users } from "lucide-react";
 import ContactForm from '@/components/ContactForm'
 import { FaCheck } from 'react-icons/fa'
+import Link from 'next/link'
 
 const page = () => {
   const adventureCombos = [
@@ -128,7 +129,7 @@ const verticalSliderFeatures = [
     </li>
                   ))}
                 </ul>
-                <a href={`https://wa.me/+917678464517?text=I%20want%20to%20enquire%20about%20your%20${adventureCombos[0].title}%20packages`}>
+                <Link href={`https://wa.me/+917678464517?text=I%20want%20to%20enquire%20about%20your%20${adventureCombos[0].title}%20packages`}>
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
@@ -136,7 +137,7 @@ const verticalSliderFeatures = [
                 >
                   GET DETAILS
                 </motion.button>       
-                </a>
+                </Link>
               </CardContent>
             </Card>
           </motion.div>

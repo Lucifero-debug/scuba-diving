@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import Link from 'next/link';
 import { FaCheck } from 'react-icons/fa';
 
 const scubaPackages = [
@@ -126,7 +127,7 @@ export default function ScubaSpecialLightSection() {
         <li className='flex gap-3 leading-[24px] font-normal font-serif text-[15px]' key={fIdx}>  <FaCheck className="text-black mt-1" />{feature}</li>
       ))}
               </ul>
-              <a href={`https://wa.me/+917678464517?text=I%20want%20to%20enquire%20about%20your%20${pkg.title}%20packages`}>
+              <Link href={`https://wa.me/+917678464517?text=I%20want%20to%20enquire%20about%20your%20${pkg.title}%20packages`}>
                   <motion.button
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.95 }}
@@ -135,7 +136,7 @@ export default function ScubaSpecialLightSection() {
       GET DETAILS
     </motion.button>
 
-              </a>
+              </Link>
             </motion.div>
           ))}
         </div>

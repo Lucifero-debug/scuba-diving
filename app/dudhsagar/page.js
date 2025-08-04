@@ -11,6 +11,7 @@ import BestServiceSection from '@/components/BestServiceSection';
 import { Bus, Trees, Salad, ShieldCheck, Mountain, Users } from "lucide-react";
 import ContactForm from '@/components/ContactForm';
 import { FaCheck } from 'react-icons/fa';
+import Link from 'next/link';
 
 const dudhsagarCards = [
   {
@@ -147,7 +148,7 @@ const page = () => {
             <li  className="flex gap-3 leading-[24px] font-normal font-serif text-[15px] text-gray-800"> <FaCheck className="text-black mt-[5px]" />Old Goa & Bom Jesus Church Visit</li>
             <li  className="flex gap-3 leading-[24px] font-normal font-serif text-[15px] text-gray-800"> <strong className='text-lg'>For 4+ Group Is 2500/-PP</strong></li>
           </ul>
-<a href={`https://wa.me/+917678464517?text=I%20want%20to%20enquire%20about%20your%20Dudhsagar%20Waterfall%20packages`}>
+<Link href={`https://wa.me/+917678464517?text=I%20want%20to%20enquire%20about%20your%20Dudhsagar%20Waterfall%20packages`}>
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
@@ -155,7 +156,7 @@ const page = () => {
           >
             GET DETAILS
           </motion.button>
-</a>
+</Link>
 
         </CardContent>
       </Card>

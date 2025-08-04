@@ -101,6 +101,7 @@ export default function ScubaSpecialLightSection() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: index * 0.2 }}
             viewport={{ once: true }}
+            className="pointer-events-auto"
           >
             <Card className="w-full md:w-[480px] min-h-[550px] bg-gradient-to-br from-white/70 to-gray-100/70 backdrop-blur-xl border border-gray-300/30 shadow-[0_0_20px_#e2e8f0] hover:shadow-[0_0_40px_#cbd5e1] transition-all duration-500 rounded-3xl overflow-hidden p-6">
               <h2 className="text-xl md:text-2xl font-bold text-[#334155] text-center font-serif">
@@ -132,6 +133,16 @@ export default function ScubaSpecialLightSection() {
                   </li>
                 ))}
               </ul>
+                            <Link href={`https://wa.me/+917678464517?text=I%20want%20to%20enquire%20about%20your%20${pkg.title}%20packages`} >
+                  <motion.button
+      whileHover={{ scale: 1.05 }}
+      whileTap={{ scale: 0.95 }}
+      className="mt-5 px-6 py-2 cursor-pointer bg-cyan-600 hover:bg-cyan-500 text-white font-medium rounded-full shadow transition w-fit self-start"
+    >
+      GET DETAILS
+    </motion.button>
+
+              </Link>
             </Card>
           </motion.div>
         ))}

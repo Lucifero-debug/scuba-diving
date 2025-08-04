@@ -12,6 +12,7 @@ import DinnerCruiseHero from '@/components/DinnerCruiseHero';
 import CruiseOptionsSection from '@/components/CruiseOptions';
 import LuxuryDinnerCruiseSetion from '@/components/LuxuryCruisesection';
 import { FaCheck } from 'react-icons/fa';
+import Link from 'next/link';
 
 const page = () => {
   const grandIsland = {
@@ -170,7 +171,7 @@ const grandIslandCards = [
                     <li className="flex gap-3 leading-[24px] font-normal font-serif text-[15px] text-gray-800" key={idx}>   <FaCheck className="text-black mt-[5px]" />{feature}</li>
                   ))}
                 </ul>
-                <a href={`https://wa.me/+917678464517?text=I%20want%20to%20enquire%20about%20your%20${grandIsland.title}%20packages`}>
+                <Link href={`https://wa.me/+917678464517?text=I%20want%20to%20enquire%20about%20your%20${grandIsland.title}%20packages`}>
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
@@ -178,7 +179,7 @@ const grandIslandCards = [
                 >
                   GET DETAILS
                 </motion.button>
-                </a>
+                </Link>
               </CardContent>
             </Card>
           </motion.div>
