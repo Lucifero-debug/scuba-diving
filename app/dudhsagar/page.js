@@ -147,6 +147,7 @@ const page = () => {
             <li  className="flex gap-3 leading-[24px] font-normal font-serif text-[15px] text-gray-800"> <FaCheck className="text-black mt-[5px]" />Old Goa & Bom Jesus Church Visit</li>
             <li  className="flex gap-3 leading-[24px] font-normal font-serif text-[15px] text-gray-800"> <strong className='text-lg'>For 4+ Group Is 2500/-PP</strong></li>
           </ul>
+<a href={`https://wa.me/+917678464517?text=I%20want%20to%20enquire%20about%20your%20Dudhsagar%20Waterfall%20packages`}>
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
@@ -154,6 +155,8 @@ const page = () => {
           >
             GET DETAILS
           </motion.button>
+</a>
+
         </CardContent>
       </Card>
     </motion.div>

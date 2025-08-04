@@ -182,6 +182,7 @@ const dinnerCruiseBestFeatures = [
     </li>
                   ))}
                 </ul>
+                <a href={`https://wa.me/+917678464517?text=I%20want%20to%20enquire%20about%20your%20${goaCombos[0].title}%20packages`}>
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
@@ -189,6 +190,7 @@ const dinnerCruiseBestFeatures = [
                 >
                   GET DETAILS
                 </motion.button>
+                </a>
               </CardContent>
             </Card>
           </motion.div>

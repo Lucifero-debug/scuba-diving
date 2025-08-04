@@ -128,13 +128,15 @@ const verticalSliderFeatures = [
     </li>
                   ))}
                 </ul>
+                <a href={`https://wa.me/+917678464517?text=I%20want%20to%20enquire%20about%20your%20${adventureCombos[0].title}%20packages`}>
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   className="mt-6 px-6 py-2 bg-cyan-600 hover:bg-cyan-500 text-white font-medium rounded-full shadow transition self-center"
                 >
                   GET DETAILS
-                </motion.button>
+                </motion.button>       
+                </a>
               </CardContent>
             </Card>
           </motion.div>
