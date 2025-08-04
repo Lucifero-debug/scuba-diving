@@ -54,9 +54,6 @@ export default function CruiseOptionsSection({
                   {card.description}
                 </p>
               </div>
-              <button className="mt-4 w-full text-sm font-semibold bg-blue-600 hover:bg-blue-500 text-white py-2 rounded-xl transition-all">
-                GET DETAILS
-              </button>
             </motion.div>
           ))}
         </div>

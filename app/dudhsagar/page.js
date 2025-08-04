@@ -106,7 +106,7 @@ const page = () => {
       sectionTitle={<><span className="text-emerald-600">Dudhsagar</span> Tour Highlights</>}
       cards={dudhsagarCards}
       ctaText="BOOK DUDHSAGAR PACKAGE"
-      onCtaClick={() => window.scrollTo({ top: 1200, behavior: "smooth" })}
+      onCtaClick={() => window.scrollTo({ top: 1800, behavior: "smooth" })}
     />
     <div className="w-full flex justify-center px-4 py-10">
   <div className="flex flex-row flex-wrap justify-center items-start gap-10 max-w-[1440px]">

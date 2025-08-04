@@ -144,7 +144,7 @@ const grandIslandCards = [
         sectionTitle={<><span className="text-blue-600">Adventure</span> Highlights</>}
         cards={grandIslandCards}
         ctaText="BOOK YOUR ISLAND ADVENTURE"
-        onCtaClick={() => window.scrollTo({ top: 1000, behavior: 'smooth' })}
+        onCtaClick={() => window.scrollTo({ top: 1800, behavior: 'smooth' })}
       />
 
       <div className="w-full flex justify-center px-4 py-10">
