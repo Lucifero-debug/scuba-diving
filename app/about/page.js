@@ -3,6 +3,7 @@ import ContactForm from '@/components/ContactForm'
 import TrustedBySection from '@/components/TrusetdBySection'
 import { Button } from '@/components/ui/button'
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 const page = () => {
@@ -11,12 +12,14 @@ const page = () => {
       <div className='first flex flex-col w-full items-center gap-4 justify-center px-10'>
         <h1 className='text-[28px] font-semibold lg:text-[48px] text-center font-poppins'>Step into<br/>GoaSportsAdventure.in Where Every Journey Begins on <br/>Goa&apos;s Enchanting Shores</h1>
         <h2 className='text-[14px] text-center font-light font-poppins lg:text-[24px]'>At GoaSportsAdventure.in, we go beyond travel — we craft lasting memories that stay with you forever. Born from the passion of seasoned travelers and true Goan locals, our goal is to showcase the soul, charm, and energy of Goa to the world. We don&apos;t just offer tours; we curate immersive experiences that connect you with the heart of Goa — its golden beaches, lively markets, peaceful scenery, and pulse-pounding adventures.</h2>
+        <Link href={`https://wa.me/+917678464517?text=I%20want%20to%20enquire%20about%20your%20Scuba%20packages`}>
      <Button
               type="submit"
               className="w-full md:w-40 bg-cyan-600 cursor-pointer hover:bg-cyan-700 text-white font-semibold"
             >
               Chat With Us
             </Button>
+        </Link>
       </div>
       <div className='border-2 border-black w-full h-[42vh] relative'>
         <Image src='/home/about.jpg' fill className='object-cover'/>
