@@ -39,10 +39,10 @@ const scubaPackages = [
     ],
   },
   {
-    title: "SCUBA DIVING AT GRAND ISLAND",
+    title: "Only Scuba Diving at Grand Island With Island Sea Trip",
     subtitle: "Inclusive Trip with Premium Meals & Gear",
-    oldPrice: "₹4,000",
-    newPrice: "₹2,500",
+    oldPrice: "₹3,000",
+    newPrice: "₹1,800",
     rating: "⭐ 4.6 (720+ reviews)",
     features: [
       "Free Pick up/drop",
@@ -98,7 +98,7 @@ export default function ScubaSpecialLightSection() {
         <motion.button
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          className="px-8 py-3 cursor-pointer bg-cyan-600 hover:bg-cyan-500 text-white font-semibold rounded-full shadow-lg transition"
+          className="px-8 py-3 cursor-pointer bg-green-700 text-white font-semibold rounded-full shadow-lg transition"
           onClick={() => window.scrollBy({ top: 800, behavior: "smooth" })}
         >
           GOA ALL PACKAGES
@@ -132,9 +132,9 @@ export default function ScubaSpecialLightSection() {
                   <motion.button
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.95 }}
-      className="mt-auto px-6 py-2 cursor-pointer bg-cyan-600 hover:bg-cyan-500 text-white font-medium rounded-full shadow transition w-fit self-start"
+      className="mt-auto px-6 py-2 cursor-pointer bg-green-700 text-white font-medium rounded-full shadow transition w-fit self-start"
     >
-      GET DETAILS
+      GET DISCOUNT ON WHATSAPP
     </motion.button>
 
               </Link>

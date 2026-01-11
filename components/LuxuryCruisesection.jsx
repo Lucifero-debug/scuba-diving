@@ -75,9 +75,9 @@ export default function LuxuryDinnerCruiseSetion({
 
           <a
             href={whatsappLink}
-            className="bg-blue-700 hover:bg-blue-800 text-white text-lg px-8 py-4 rounded-xl shadow-md"
+            className="bg-green-700  text-white text-lg px-8 py-4 rounded-xl shadow-md"
           >
-            BOOK NOW
+            Today's Deal On Whatsapp
           </a>
         </motion.div>
 

@@ -63,7 +63,7 @@ export default function BestServiceSection({
       >
         <a
           href={ctaLink}
-          className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-xl text-lg shadow-md transition-all duration-300"
+          className="bg-green-700 text-white px-6 py-3 rounded-xl text-lg shadow-md transition-all duration-300"
         >
           {ctaText}
         </a>

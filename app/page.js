@@ -26,7 +26,7 @@ export default function Home() {
 
     {/* Main Title */}
     <h1 className="text-4xl md:text-6xl lg:text-6xl font-bold text-gray-900 leading-tight glow">
-      Welcome To Scuba Diving Adventure! Best Scuba and Water Sports Experience in Goa & Andaman Islands
+      Welcome To Goa Sports Adventure! Best Scuba and Water Sports Experience in Goa & Andaman Islands
     </h1>
 
     {/* Paragraph */}

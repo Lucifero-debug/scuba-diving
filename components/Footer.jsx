@@ -45,7 +45,7 @@ export default function Footer() {
         <div className="space-y-3">
           <h3 className="text-xl font-semibold text-cyan-700">Get In Touch</h3>
           <ul className="space-y-1 text-gray-700 text-sm">
-            <li>Azhankhan8542@gmail.com</li>
+            <li>info@goasportsadventure.in</li>
             <li>+91 76784 64517</li>
           </ul>
         </div>

@@ -12,6 +12,8 @@ import { Bus, Trees, Salad, ShieldCheck, Mountain, Users } from "lucide-react";
 import ContactForm from '@/components/ContactForm';
 import { FaCheck } from 'react-icons/fa';
 import Link from 'next/link';
+import Clients from '@/components/Clients';
+import ScubaVideosSection from '@/components/ScubaVideoSection';
 
 const dudhsagarCards = [
   {
@@ -89,7 +91,7 @@ const dudhsagarBestFeatures = [
 const page = () => {
   return (
     <div className='w-full min-h-screen'>
-       <DinnerCruiseHero
+       {/* <DinnerCruiseHero
       backgroundImage="/dudhsagar/hero.webp"
       title="DUDHSAGAR WATERFALL TOUR"
       subtitle="Nature & Adventure"
@@ -102,17 +104,11 @@ const page = () => {
         "Buffet Lunch + Old Goa & Bom Jesus Church Visit",
         "<strong>Ideal For:</strong> Family, Friends, Nature Lovers",
       ]}
-    />
-      <CruiseOptionsSection
-      sectionTitle={<><span className="text-emerald-600">Dudhsagar</span> Tour Highlights</>}
-      cards={dudhsagarCards}
-      ctaText="BOOK DUDHSAGAR PACKAGE"
-      onCtaClick={() => window.scrollTo({ top: 1800, behavior: "smooth" })}
-    />
-    <div className="w-full flex justify-center px-4 py-10">
+    /> */}
+        <div className="w-full flex justify-center px-4 py-10 mt-20">
   <div className="flex flex-row flex-wrap justify-center items-start gap-10 max-w-[1440px]">
     {/* Left Image */}
-    <div className="relative w-full lg:w-[400px] h-[700px] rounded-2xl overflow-hidden shadow-lg">
+    <div className="relative w-full lg:w-[400px] h-[450px] lg:h-[700px] rounded-2xl overflow-hidden shadow-lg">
       <Image
         src="/dudhsagar/dudhsagar.jpg"
         alt="Dudhsagar Waterfall"
@@ -154,7 +150,7 @@ const page = () => {
             whileTap={{ scale: 0.95 }}
             className="mt-6 px-6 py-2 bg-lime-600 hover:bg-lime-500 text-white font-medium rounded-full shadow transition self-center"
           >
-            GET DETAILS
+            GET DISCOUNT ON WHATSAPP
           </motion.button>
 </Link>
 
@@ -163,6 +159,15 @@ const page = () => {
     </motion.div>
   </div>
 </div>
+      <CruiseOptionsSection
+      sectionTitle={<><span className="text-emerald-600">Dudhsagar</span> Tour Highlights</>}
+      cards={dudhsagarCards}
+      ctaText="SPECIAL OFFERS ON WHATSAPP"
+      onCtaClick={() => window.scrollTo({ top: 1800, behavior: "smooth" })}
+    />
+    <ScubaVideosSection/>
+    <Clients/>
+
    <LuxuryDinnerCruiseSetion
       title="Dudhsagar Waterfalls Combo Tour"
       subtitle="Explore Nature, Spice & Heritage"
@@ -182,7 +187,7 @@ const page = () => {
       subtitle="Experience the Ultimate Combo Adventure"
       description="Enjoy a thrilling Dudhsagar trip with jeep safari, waterfalls, churches, spice plantation, and a delicious buffet lunch—all organized for a perfect day in Goa."
       features={dudhsagarBestFeatures}
-      ctaText="BOOK YOUR TRIP"
+      ctaText="GET DISCOUNT ON WHATSAPP"
       ctaLink="https://wa.me/917678464517?text=Hello%2C%20I'm%20interested%20in%20the%20Dudhsagar%20Waterfalls%20Tour%20Package"
     />
      <ContactForm/>

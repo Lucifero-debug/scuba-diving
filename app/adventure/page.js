@@ -13,6 +13,8 @@ import { Timer, Music, Disc3, Star, BadgeCheck, Users } from "lucide-react";
 import ContactForm from '@/components/ContactForm'
 import { FaCheck } from 'react-icons/fa'
 import Link from 'next/link'
+import Clients from '@/components/Clients'
+import ScubaVideosSection from '@/components/ScubaVideoSection'
 
 const page = () => {
   const adventureCombos = [
@@ -63,7 +65,7 @@ const verticalSliderFeatures = [
 
   return (
     <div className="w-full min-h-screen">
-      <DinnerCruiseHero
+      {/* <DinnerCruiseHero
         backgroundImage="/adventure/hero.jpg"
         title="ADVENTURE BOAT PARTY"
         subtitle="Island, Dolphin Show, Watersports, Food"
@@ -74,23 +76,10 @@ const verticalSliderFeatures = [
           "Includes: Island, Dolphin Show, Watersports, Lunch/Breakfast",
           "<strong>Perfect for:</strong> Friends, Groups & Thrill Seekers",
         ]}
-      />
-
-      <CruiseOptionsSection
-        sectionTitle={<><span className="text-blue-600">Adventure</span> Activities</>}
-        cards={scrollFeatures.map(f => ({
-          title: f.title,
-          subtitle: "INCLUDED",
-          description: f.title,
-          image: f.image,
-        }))}
-        ctaText="BOOK YOUR SEA ADVENTURE"
-        onCtaClick={() => window.scrollTo({ top: 1800, behavior: "smooth" })}
-      />
-
-      <div className="w-full flex justify-center px-4 py-10">
+      /> */}
+            <div className="w-full flex justify-center px-4 py-10 mt-20">
         <div className="flex flex-row flex-wrap justify-center items-start gap-10 max-w-[1440px]">
-          <div className="relative w-full lg:w-[400px] h-[700px] rounded-2xl overflow-hidden shadow-lg">
+          <div className="relative w-full lg:w-[400px] h-[450px] lg:h-[700px] rounded-2xl overflow-hidden shadow-lg">
             <Image
               src="/adventure/adven-bg.jpeg"
               alt="Adventure Background"
@@ -133,9 +122,9 @@ const verticalSliderFeatures = [
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="mt-6 px-6 py-2 bg-cyan-600 hover:bg-cyan-500 text-white font-medium rounded-full shadow transition self-center"
+                  className="mt-6 px-6 py-2 bg-green-700 text-white font-medium rounded-full shadow transition self-center"
                 >
-                  GET DETAILS
+                  GET DISCOUNT ON WHATSAPP
                 </motion.button>       
                 </Link>
               </CardContent>
@@ -143,6 +132,21 @@ const verticalSliderFeatures = [
           </motion.div>
         </div>
       </div>
+
+      <CruiseOptionsSection
+        sectionTitle={<><span className="text-blue-600">Adventure</span> Activities</>}
+        cards={scrollFeatures.map(f => ({
+          title: f.title,
+          subtitle: "INCLUDED",
+          description: f.title,
+          image: f.image,
+        }))}
+        ctaText="SPECIAL OFFER ON WHATSAPP"
+        onCtaClick={() => window.scrollTo({ top: 1800, behavior: "smooth" })}
+      />
+      <ScubaVideosSection/>
+
+<Clients/>
 
       <LuxuryDinnerCruiseSection
         title="Adventure Boat Party Trip"
@@ -163,7 +167,7 @@ const verticalSliderFeatures = [
         title="Adventure Boat Party"
         subtitle="Explore, Ride, Splash & Celebrate"
         features={adventureBestFeatures}
-        ctaText={"BOOK YOUR ADVENTURE NOW"}
+        ctaText={"GET DISCOUNT ON WHATSAPP"}
         ctaLink={"https://wa.me/917678464517?text=Hello%2C%20I'm%20interested%20in%20the%20Adventure%20Boat%20Party%20Tour%20Package"}
         description="Thrilling rides, dolphin shows, watersports, and delicious meals — all in one ultimate sea adventure!"
       />

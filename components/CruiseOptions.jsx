@@ -65,13 +65,13 @@ export default function CruiseOptionsSection({
           whileTap={{ scale: 0.95 }}
           className="w-full flex justify-center mt-6 mb-6"
         >
-          <Button
+          <a
             variant="default"
-            className="bg-gradient-to-r from-[#38bdf8] via-[#7c3aed] to-[#38bdf8] text-white px-8 py-4 text-lg font-bold shadow-lg hover:shadow-purple-400 transition-all rounded-full cursor-pointer"
-            onClick={onCtaClick}
+            className="bg-green-700 text-white px-8 py-4 text-lg  shadow-lg transition-all rounded-full cursor-pointer"
+            href="https://wa.me/917678464517?text=Hello%2C%20I'm%20interested%20in%20Your%20Tour%20Package"
           >
             {ctaText}
-          </Button>
+          </a>
         </motion.div>
       )}
     </section>

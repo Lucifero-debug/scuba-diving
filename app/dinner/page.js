@@ -13,6 +13,8 @@ import { Timer, Music, Disc3, Star, BadgeCheck, Users } from "lucide-react";
 import ContactForm from '@/components/ContactForm'
 import { FaCheck } from 'react-icons/fa'
 import Link from 'next/link'
+import Clients from '@/components/Clients'
+import ScubaVideosSection from '@/components/ScubaVideoSection'
 
 const page = () => {
   const goaCombos = [
@@ -50,7 +52,7 @@ const page = () => {
     title: "Open Air Upper Deck",
     subtitle: "DANCE FLOOR",
     description: "Casino Sightseeing\nEnjoy best views of Goa During Night.",
-    image: "https://images.unsplash.com/photo-1667604963377-93dda0e11b1b?q=80&w=1072&auto=format&fit=crop",
+    image: "/dinner/open.jpeg",
   },
   {
     title: "Dinner Party Disco Cruise",
@@ -118,7 +120,7 @@ const dinnerCruiseBestFeatures = [
 
   return (
     <div className="w-full min-h-screen">
-  <DinnerCruiseHero
+  {/* <DinnerCruiseHero
       backgroundImage="https://images.unsplash.com/photo-1694501898533-3298f5899e3d?q=80&w=687&auto=format&fit=crop"
       title="DINNER CRUISE PARTY"
       subtitle="Hello!"
@@ -132,18 +134,11 @@ const dinnerCruiseBestFeatures = [
         "<strong>Private Table:</strong> For All on Deck",
         "<strong>Different Cruises Available:</strong> Couples, Family & Groups",
       ]}
-    />
- <CruiseOptionsSection
-      sectionTitle={<><span className="text-blue-600">Cruises</span> For All Moods</>}
-      cards={cruiseCards}
-      ctaText="BOOK YOUR GOA CRUISE"
-      onCtaClick={() => window.scrollTo({ top: 1800, behavior: "smooth" })}
-    />
-
-      <div className="w-full flex justify-center px-4 py-10">
+    /> */}
+          <div className="w-full flex justify-center px-4 py-10 mt-20">
         <div className="flex flex-row flex-wrap justify-center items-start gap-10 max-w-[1440px]">
           {/* Left Image */}
-          <div className="relative w-full lg:w-[400px] h-[700px] rounded-2xl overflow-hidden shadow-lg">
+          <div className="relative w-full lg:w-[400px] h-[450px] lg:h-[700px] rounded-2xl overflow-hidden shadow-lg">
             <Image
               src="/dinner/sunset-dinner.jpg"
               alt="Cruise Background"
@@ -187,9 +182,9 @@ const dinnerCruiseBestFeatures = [
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="mt-6 px-6 py-2 bg-cyan-600 hover:bg-cyan-500 text-white font-medium rounded-full shadow transition self-center"
+                  className="mt-6 px-6 py-2 bg-green-700 text-white font-medium rounded-full shadow transition self-center"
                 >
-                  GET DETAILS
+                  GET DISCOUNT ON WHATSAPP
                 </motion.button>
                 </Link>
               </CardContent>
@@ -197,6 +192,15 @@ const dinnerCruiseBestFeatures = [
           </motion.div>
         </div>
       </div>
+ <CruiseOptionsSection
+      sectionTitle={<><span className="text-blue-600">Cruises</span> For All Moods</>}
+      cards={cruiseCards}
+      ctaText="SPECIAL OFFERS ON WHATSAPP"
+      onCtaClick={() => window.scrollTo({ top: 1800, behavior: "smooth" })}
+    />
+<ScubaVideosSection/>
+
+<Clients/>
         <LuxuryDinnerCruiseSection
       title="Luxury Dinner Cruise Party"
       subtitle="Sea | Music | Celebration | Food | Dance"
@@ -216,7 +220,7 @@ const dinnerCruiseBestFeatures = [
       title="Luxury Dinner Cruise"
       subtitle="Enjoy the Ultimate Party on the Sea"
       features={dinnerCruiseBestFeatures}
-      ctaText={"BOOK YOUR DINNER CRUISE"}
+      ctaText={"GET DISCOUNT ON WHATSAPP"}
          ctaLink="https://wa.me/917678464517?text=Hello%2C%20I'm%20interested%20in%20the%20Dinner%20Cruise%20Tour%20Package"
       description="Hop aboard our Luxury Dinner Cruise in Goa – the perfect evening for families, couples, and groups with buffet, music, performances, and more!"
     />

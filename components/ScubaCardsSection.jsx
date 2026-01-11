@@ -135,9 +135,9 @@ export default function ScubaSpecialLightSection() {
                   <motion.button
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.95 }}
-      className="mt-5 px-6 py-2 cursor-pointer bg-cyan-600 hover:bg-cyan-500 text-white font-medium rounded-full shadow transition w-fit self-start"
+      className="mt-5 px-6 py-2 cursor-pointer bg-green-700 text-white font-medium rounded-full shadow transition w-fit self-start"
     >
-      GET DETAILS
+      GET DISCOUNT ON WHATSAPP
     </motion.button>
 
               </Link>

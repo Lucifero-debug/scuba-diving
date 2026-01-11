@@ -65,7 +65,7 @@ export default function InfoDrawer() {
           <p>⚲ Port Blair Andaman Island</p>
           <p>☏ +91 76784 64517</p>
           <p className="text-cyan-600 mt-4 text-md md:text-base font-medium">
-           ✉︎ Azhankhan8542@gmail.com
+           ✉︎ info@goasportsadventure.in
           </p>
         </div>
       </SheetContent>

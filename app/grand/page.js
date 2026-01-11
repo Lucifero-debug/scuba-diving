@@ -13,6 +13,8 @@ import CruiseOptionsSection from '@/components/CruiseOptions';
 import LuxuryDinnerCruiseSetion from '@/components/LuxuryCruisesection';
 import { FaCheck } from 'react-icons/fa';
 import Link from 'next/link';
+import Clients from '@/components/Clients';
+import ScubaVideosSection from '@/components/ScubaVideoSection';
 
 const page = () => {
   const grandIsland = {
@@ -20,7 +22,7 @@ const page = () => {
     subtitle:
       'Scuba Diving + Water Sports + Dolphin Show + Meals + Photos + Pickup',
     oldPrice: '₹3,500',
-    newPrice: '₹2,299',
+    newPrice: '₹2,750',
     rating: '⭐ 4.9 (1000+ reviews)',
     features: [
       '65+ Km Grand Island Sea Trip Via Speed Boat',
@@ -112,7 +114,7 @@ const grandIslandCards = [
     title: "Underwater Photo & Video",
     subtitle: "MEMORIES",
     description: "Get HD photos and videos of your dive.\nCaptured by GoPro10—perfect for solo or group moments.",
-    image: "/grand/photo.jpg",
+    image: "/grand/photo.jpeg",
   },
 ];
 
@@ -128,30 +130,22 @@ const grandIslandCards = [
 
   return (
     <div className="w-full min-h-screen">
-      <DinnerCruiseHero
+      {/* <DinnerCruiseHero
         title="GRAND ISLAND TOUR"
         subtitle="Goa’s Top Rated Combo Adventure"
         heading="Ultimate Sea Adventure"
         highlight="Grand Island Package"
-        backgroundImage="/grand/hero.jpg"
+        backgroundImage="/grand/hero.jpeg"
         descriptionList={[
           '<strong>Full Day Scuba + Watersports + Meals</strong>',
           'Best Value Combo Adventure in Goa',
           'Pickup, Meals, Photos, Gear – All Included!',
         ]}
-      />
-
-      <CruiseOptionsSection
-        sectionTitle={<><span className="text-blue-600">Adventure</span> Highlights</>}
-        cards={grandIslandCards}
-        ctaText="BOOK YOUR ISLAND ADVENTURE"
-        onCtaClick={() => window.scrollTo({ top: 1800, behavior: 'smooth' })}
-      />
-
-      <div className="w-full flex justify-center px-4 py-10">
+      /> */}
+            <div className="w-full flex justify-center px-4 py-10 mt-20">
         <div className="flex flex-col lg:flex-row justify-center items-start gap-10 max-w-[1440px]">
-          <div className="relative w-full lg:w-[400px] h-[500px] lg:h-[700px] rounded-2xl overflow-hidden shadow-lg">
-            <Image src="/grand/poster.jpg" alt="Grand Island" fill className="object-cover" />
+          <div className="relative w-full lg:w-[400px] h-[450px] lg:h-[700px] rounded-2xl overflow-hidden shadow-lg">
+            <Image src="/grand/poster.jpg" alt="Grand Island" fill className="object-contain" />
           </div>
 
           <motion.div
@@ -159,26 +153,26 @@ const grandIslandCards = [
           >
             <Card className="w-full md:w-[480px] min-h-[600px] bg-gradient-to-br from-white/60 to-emerald-100/60 backdrop-blur-xl border border-green-300/30 shadow-[0_0_20px_#6ee7b7] hover:shadow-[0_0_40px_#10b981] transition-all duration-500 rounded-3xl overflow-hidden">
               <CardContent className="flex flex-col gap-6 p-6 md:p-8">
-                <h2 className="text-2xl font-bold text-center text-emerald-800">{grandIsland.title}</h2>
-                <p className="text-base text-center text-emerald-700">{grandIsland.subtitle}</p>
-                <div className="flex items-center justify-center gap-4">
-                  <span className="text-red-500 line-through text-xl">{grandIsland.oldPrice}</span>
-                  <span className="text-green-600 text-3xl font-bold">{grandIsland.newPrice}</span>
+                <h2 className="text-2xl font-bold text-center text-emerald-800 font-serif">{grandIsland.title}</h2>
+                <p className="text-base text-center text-emerald-700 font-serif">{grandIsland.subtitle}</p>
+                <div className="flex items-center justify-center gap-4 font-serif">
+                  <span className="text-red-500 line-through text-xl font-serif">{grandIsland.oldPrice}</span>
+                  <span className="text-green-600 text-3xl font-bold font-serif">{grandIsland.newPrice}</span>
                 </div>
-                <p className="text-sm text-yellow-600 text-center">{grandIsland.rating}</p>
-                <ul className="list-disc list-inside text-sm text-gray-800 space-y-1">
+                <p className="text-sm text-yellow-600 text-center font-serif">{grandIsland.rating}</p>
+                                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="mt-6 px-6 py-2 bg-emerald-600 hover:bg-emerald-500 text-white font-medium rounded-full shadow transition self-center"
+                >
+                  GET DISCOUNT ON WHATSAPP
+                </motion.button>
+                <ul className="list-disc list-inside text-sm font-bold text-gray-800 space-y-1">
                   {grandIsland.features.map((feature, idx) => (
                     <li className="flex gap-3 leading-[24px] font-normal font-serif text-[15px] text-gray-800" key={idx}>   <FaCheck className="text-black mt-[5px]" />{feature}</li>
                   ))}
                 </ul>
                 <Link href={`https://wa.me/+917678464517?text=I%20want%20to%20enquire%20about%20your%20${grandIsland.title}%20packages`}>
-                <motion.button
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="mt-6 px-6 py-2 bg-emerald-600 hover:bg-emerald-500 text-white font-medium rounded-full shadow transition self-center"
-                >
-                  GET DETAILS
-                </motion.button>
                 </Link>
               </CardContent>
             </Card>
@@ -186,6 +180,15 @@ const grandIslandCards = [
         </div>
       </div>
 
+      <CruiseOptionsSection
+        sectionTitle={<><span className="text-blue-600">Adventure</span> Highlights</>}
+        cards={grandIslandCards}
+        ctaText="SPECIAL OFFER ON WHATSAPP"
+        onCtaClick={() => window.scrollTo({ top: 1800, behavior: 'smooth' })}
+      />
+<ScubaVideosSection/>
+
+<Clients/>
       <LuxuryDinnerCruiseSetion
   title="FULL FUN GRAND ISLAND COMBO"
   subtitle="Scuba, Watersports, Sightseeing & Thrill"
@@ -195,7 +198,7 @@ const grandIslandCards = [
   description="A thrilling 65+ km speed boat sea trip to Grand Island with scuba diving, dolphin show, full watersports combo, buffet meals, GoPro shoot, and free hotel transfers!"
   callLabel="Seats Filling Fast – Call to Book"
   phoneNumber="+9176784 64517"
-  whatsappLink="https://wa.me/917678464517?text=Hello%2C%20I'm%20interested%20in%20the%20Dudhsagar%20Grand%Island%20Tour%20Package"
+  whatsappLink="https://wa.me/917678464517?text=Hello%2C%20I'm%20interested%20in%20the%20Grand%20Island%20Tour%20Package"
   scrollCardComponent={
     <VerticalCardSlider features={grandIslandFeatures} intervalMs={4000} />
   }
@@ -206,7 +209,7 @@ const grandIslandCards = [
         title="Grand Island Combo"
         subtitle="The Most Complete Adventure Day in Goa"
         features={bestFeatures}
-        ctaText="BOOK GRAND ISLAND"
+        ctaText="GET DISCOUNT ON WHATSAPP"
         ctaLink="https://wa.me/917678464517?text=Hello%2C%20I'm%20interested%20in%20the%20Grand%20Island%20Tour%20Package"
         description="Dive into Goa’s best tour combo: Scuba, Dolphins, Water Sports, Food, Photos & Pickup — All at once!"
       />

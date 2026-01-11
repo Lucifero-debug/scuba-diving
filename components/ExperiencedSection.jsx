@@ -38,27 +38,15 @@ export default function ExperienceSection() {
       icon: "/icons/snorkelling.jpg",
     },
     {
-      title: "GLASS BOAT",
-      subtitle: "See the Sea Below",
-      image: "https://plus.unsplash.com/premium_photo-1680831748352-3a6f45a3468e?w=600&auto=format&fit=crop",
-      icon: "/icons/glassboat.jpg",
-    },
-    {
       title: "KAYAKING",
       subtitle: "Solo Paddle Adventure",
       image: "https://images.unsplash.com/photo-1480480565647-1c4385c7c0bf?q=80&w=1331&auto=format&fit=crop",
       icon: "/icons/kayak.jpg",
     },
     {
-      title: "FISHING TRIP",
-      subtitle: "Catch & Relax",
-      image: "https://plus.unsplash.com/premium_photo-1663040174476-280284ba9613?q=80&w=1170&auto=format&fit=crop",
-      icon: "/icons/fishing.jpg",
-    },
-    {
       title: "SUNSET CRUISE",
       subtitle: "Evening Romance",
-      image: "https://images.unsplash.com/photo-1578530332818-6ba472e67b9f?q=80&w=1172&auto=format&fit=crop",
+      image: "/home/cruise.jpeg",
       icon: "/icons/cruise.jpg",
     },
   ];

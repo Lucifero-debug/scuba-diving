@@ -3,19 +3,19 @@ export const testimonials = [
     quote: "Our Dudhsagar trip was nothing short of magical! The jeep safari, the waterfalls, and the spice plantation tour were well-planned. Highly recommend for nature lovers!",
     name: "Aman Mehta",
     title: "@aman_traveldiaries",
-    img: "/data/men1.webp",
+    img: "/data/men1.jpeg",
   },
   {
     quote: "Booked the dinner cruise with GoaTourPackages and it was the highlight of our honeymoon. Loved the DJ, the food, and the sunset view from the deck.",
     name: "Simran Kaur",
     title: "@simran.explorer",
-    img: "/data/fe1.webp",
+    img: "/data/fe1.jpeg",
   },
   {
     quote: "The Grand Island scuba diving experience exceeded all expectations! My instructor was so patient and calm. Loved the underwater video too.",
     name: "Rahul Sharma",
     title: "@rahuldivesdeep",
-    img: "/data/men2.jpg",
+    img: "/data/men2.jpeg",
   },
   {
     quote: "I've been to Goa a few times, but this was the first time I truly *experienced* it. From parasailing to waterfall hikes — everything was seamless.",
@@ -27,7 +27,7 @@ export const testimonials = [
     quote: "Had a fantastic time on the Adventure Boat Party! The cold coffee in the morning slot was refreshing. Even got to see dolphins!",
     name: "Karan Solanki",
     title: "@karansolanki_24",
-    img: "/data/men3.jpg",
+    img: "/data/men3.jpeg",
   },
   {
     quote: "Rock Island was surreal! Our group did the scuba + watersports combo, and everything was handled so professionally.",
@@ -39,7 +39,7 @@ export const testimonials = [
     quote: "Super organized team, and very helpful. We had some dietary preferences and they made sure we were comfortable throughout.",
     name: "Aditya Nair",
     title: "@aditya.nair",
-    img: "/data/men4.jpg",
+    img: "/data/men4.jpeg",
   },
   {
     quote: "The cultural dance on the dinner cruise was amazing! My kids still talk about it. Goan hospitality at its best.",
