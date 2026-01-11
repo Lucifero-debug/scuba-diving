@@ -208,6 +208,14 @@ body {
   }
 }
   
+:root {
+  --font-primary: var(--font-poppins);
+}
+
+body {
+  font-family: var(--font-primary), system-ui, sans-serif;
+}
+
 
 .floating-btn {
   position: fixed;

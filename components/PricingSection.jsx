@@ -109,30 +109,31 @@ export default function ScubaSpecialLightSection() {
           {scubaPackages.map((pkg,id) => (
             <motion.div
               key={id}
-              className="p-6 rounded-3xl flex flex-col gap-4 border border-cyan-100 bg-white/70 backdrop-blur-md shadow-xl hover:shadow-2xl transition-all text-left"
+              className="p-6 rounded-3xl flex flex-col gap-1 border border-cyan-100 bg-white/70 backdrop-blur-md shadow-xl hover:shadow-2xl transition-all text-left"
               whileHover={{ scale: 1.02 }}
             >
-              <h2 className="text-2xl font-bold text-cyan-700 mb-1">
+              <Image src={'https://im.whatshot.in/img/2022/Jan/sao-jacinto-island-5-best-islands-of-goa-1641806851.jpg?wm=1&w=1200&h=630&cc=1'} width={500} height={150}/>
+              <h2 className="text-[24px] font-bold text-[#191919] font-poppins mb-1">
               {pkg.title}
               </h2>
-              <p className="text-md text-gray-600 mb-3">
+              <p className="text-[16px] font-normal font-poppins text-gray-600 mb-3">
             {pkg.subtitle}
               </p>
               <div className="flex items-center gap-4 mb-4">
-              <p className="text-red-500 line-through text-xl">{pkg.oldPrice}</p>
-      <p className="text-green-600 text-3xl font-bold">{pkg.newPrice}</p>
+      <p className="text-[#191919] text-3xl font-bold">{pkg.newPrice}</p>
+              <p className="text-[#008395] line-through text-xl">{pkg.oldPrice}</p>
               </div>
               <p className="text-sm mb-3 text-yellow-600">{pkg.rating}</p>
               <ul className="list-inside text-md text-gray-700 space-y-1">
                 {pkg.features.map((feature, fIdx) => (
-        <li className='flex gap-3 leading-[24px] font-normal font-serif text-[15px]' key={fIdx}>  <FaCheck className="text-black mt-1" />{feature}</li>
+        <li className='flex gap-3 leading-[24px] font-normal font-serif text-[15px]' key={fIdx}>  <span className="mt-2 h-2 w-2 rounded-full bg-[#191919]"></span>  {feature}</li>
       ))}
               </ul>
               <Link href={`https://wa.me/+917678464517?text=I%20want%20to%20enquire%20about%20your%20${pkg.title}%20packages`}>
                   <motion.button
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.95 }}
-      className="mt-auto px-6 py-2 cursor-pointer bg-green-700 text-white font-medium rounded-full shadow transition w-fit self-start"
+      className="mt-auto px-6 py-2 cursor-pointer text-[#008395] font-medium rounded-full shadow transition w-fit self-start"
     >
       GET DISCOUNT ON WHATSAPP
     </motion.button>

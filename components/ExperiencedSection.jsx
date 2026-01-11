@@ -59,7 +59,7 @@ export default function ExperienceSection() {
 
       {/* Header */}
       <div className="text-center max-w-4xl mx-auto mb-16 px-4">
-        <h2 className="text-pink-500 text-sm uppercase tracking-[0.2em]">
+        <h2 className="text-pink-500 font-bold font-poppins text-[16px] uppercase tracking-[0.2em]">
           Any 5 Water Sports Included
         </h2>
         <h1 className="text-5xl md:text-7xl font-extrabold mt-2 leading-tight tracking-wide">
@@ -97,8 +97,8 @@ export default function ExperienceSection() {
                 className="w-full h-56 object-cover"
               />
               <div className="p-6 text-left">
-                <p className="text-sm text-gray-500 uppercase">{card.title}</p>
-                <h3 className="text-xl font-semibold mt-1 text-[#1e293b]">
+                <p className="text-[16px] font-bold font-poppins text-[#1e293b] uppercase">{card.title}</p>
+                <h3 className="text-[12px] font-regular mt-1 text-[#1A1A1A]">
                   {card.subtitle}
                 </h3>
               </div>

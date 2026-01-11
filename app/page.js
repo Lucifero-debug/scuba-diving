@@ -61,10 +61,7 @@ Dive In With Us, And Discover The Magic Beneath. <br></br>
 <ScubaCardsSection/>
 <WhyChooseUsSection/>
 <Clients/>
-<HeaderWithLightReveal/>
 <FaqAccordion/>
-<ScubaCtaSection/>
-<BestServiceSection/>
     </div>
   );
 }

@@ -13,28 +13,28 @@ const features = [
     title: "Experienced & Certified Instructors",
     description:
       "Dive with confidence under the guidance of professionals with years of training and certification.",
-    icon: <FaUserTie className="text-4xl text-cyan-800" />,
+    icon: <FaUserTie className="text-4xl text-[#008395]" />,
     bg: "bg-gradient-to-br from-cyan-100 via-teal-50 to-white",
   },
   {
     title: "Personalized Dive Sessions",
     description:
       "We adapt each dive to your comfort and skill level, ensuring a unique underwater experience.",
-    icon: <FaUserFriends className="text-4xl text-purple-700" />,
+    icon: <FaUserFriends className="text-4xl text-[#008395]" />,
     bg: "bg-gradient-to-br from-purple-100 via-pink-50 to-white",
   },
   {
     title: "Top-Quality Equipment & Safety Standards",
     description:
       "We use high-end gear and follow international safety protocols to ensure a secure dive every time.",
-    icon: <FaShieldAlt className="text-4xl text-amber-600" />,
+    icon: <FaShieldAlt className="text-4xl text-[#008395]" />,
     bg: "bg-gradient-to-br from-sky-100 via-blue-50 to-white",
   },
   {
     title: "Unmatched Customer Satisfaction",
     description:
       "Our happy customers speak for us — stellar reviews and memorable adventures guaranteed.",
-    icon: <FaHeart className="text-4xl text-rose-500" />,
+    icon: <FaHeart className="text-4xl text-[#008395]" />,
     bg: "bg-gradient-to-br from-rose-100 via-amber-50 to-white",
   },
 ];

@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { Card } from "@/components/ui/card";
 import { FaCheck } from "react-icons/fa6";
 import Link from "next/link";
+import Image from "next/image";
 
 const goaCombos = [
   {
@@ -101,16 +102,17 @@ export default function ScubaSpecialLightSection() {
             viewport={{ once: true }}
             className="pointer-events-auto"
           >
-            <Card className="w-full md:w-[480px] min-h-[550px] bg-gradient-to-br from-white/70 to-gray-100/70 backdrop-blur-xl border border-gray-300/30 shadow-[0_0_20px_#e2e8f0] hover:shadow-[0_0_40px_#cbd5e1] transition-all duration-500 rounded-3xl overflow-hidden p-6">
-              <h2 className="text-xl md:text-2xl font-bold text-[#334155] text-center font-serif">
+            <Card className="w-full md:w-[480px] gap-1 min-h-[550px] bg-gradient-to-br from-white/70 to-gray-100/70 backdrop-blur-xl border border-gray-300/30 shadow-[0_0_20px_#e2e8f0] hover:shadow-[0_0_40px_#cbd5e1] transition-all duration-500 rounded-3xl overflow-hidden p-6">
+            <Image src={'https://www.andamanisland.in/assets/site1/theme3/images/overview-of-andaman-islands/Neil-Island-3.png'} height={150} width={500}/>
+              <h2 className="text-[24px] font-bold text-[#191919] font-poppins text-center">
                 {pkg.title}
               </h2>
-              <p className="text-[15px] text-gray-700 text-center mt-2 font-serif">
+              <p className="text-[16px] font-normal font-poppins text-gray-600 text-center mt-2">
                 {pkg.subtitle}
               </p>
               <div className="flex justify-center gap-4 mt-3">
-                <span className="text-red-500 line-through text-lg">{pkg.oldPrice}</span>
-                <span className="text-green-600 text-2xl font-bold">{pkg.newPrice}</span>
+                <span className="text-[#191919] text-3xl font-bold">{pkg.newPrice}</span>
+                <span className="text-[#008395] line-through text-xl">{pkg.oldPrice}</span>
               </div>
               <p className="text-center text-slate-600 mt-1">{pkg.rating}</p>
 
@@ -124,7 +126,7 @@ export default function ScubaSpecialLightSection() {
                       <strong className="text-[#1e293b] text-[16px]">{feature}</strong>
                     ) : (
                       <>
-                        <FaCheck className="text-[#334155] mt-[5px]" />
+                      <span className="mt-2 h-2 w-2 rounded-full bg-[#191919]"></span>
                         <span>{feature}</span>
                       </>
                     )}
@@ -135,7 +137,7 @@ export default function ScubaSpecialLightSection() {
                   <motion.button
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.95 }}
-      className="mt-5 px-6 py-2 cursor-pointer bg-green-700 text-white font-medium rounded-full shadow transition w-fit self-start"
+      className="mt-5 px-6 py-2 cursor-pointer text-[#008395] font-medium rounded-full shadow transition w-fit self-start"
     >
       GET DISCOUNT ON WHATSAPP
     </motion.button>
