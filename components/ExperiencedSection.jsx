@@ -54,17 +54,17 @@ export default function ExperienceSection() {
   const scrollRef = useRef(null);
 
   return (
-    <section className="relative w-full h-screen bg-gradient-to-b from-[#f0f4ff] to-[#ffffff] text-[#1e293b] overflow-hidden flex flex-col justify-center">
-      <Spotlight className="top-0 left-0" fill="#e0e8ff" />
+    <section className="relative w-full h-screen bg-gradient-to-b from-[#f0f4ff] to-[#ffffff] text-[#1e293b] overflow-hidden flex flex-col mt-6">
+      {/* <Spotlight className="top-0 left-0" fill="#e0e8ff" /> */}
 
       {/* Header */}
-      <div className="text-center max-w-4xl mx-auto mb-16 px-4">
-        <h2 className="text-pink-500 font-bold font-poppins text-[16px] uppercase tracking-[0.2em]">
+      <div className="text-center max-w-4xl mx-auto mb-8 px-4">
+                <h1 className="text-[26px] md:text-7xl font-poppins font-bold  leading-tight tracking-wide">
+          Experience the Thrill
+        </h1>
+        <h2 className="text-black font-regular font-poppins text-[14px] tracking-[0.2em]">
           Any 5 Water Sports Included
         </h2>
-        <h1 className="text-5xl md:text-7xl font-extrabold mt-2 leading-tight tracking-wide">
-          Experience the <span className="text-blue-500">Thrill</span>
-        </h1>
       </div>
 
       {/* Horizontal Scroll with Perspective */}
@@ -75,7 +75,7 @@ export default function ExperienceSection() {
         {cards.map((card, index) => (
           <motion.div
             key={index}
-            className="relative min-w-[320px] md:min-w-[450px] snap-center shrink-0 group"
+            className="relative w-[220px] lg:min-w-[450px] snap-center shrink-0 group"
             initial={{ opacity: 0, y: 50, rotateY: 25 }}
             whileInView={{ opacity: 1, y: 0, rotateY: 0 }}
             transition={{
@@ -85,7 +85,7 @@ export default function ExperienceSection() {
             viewport={{ once: true, amount: 0.3 }}
           >
             {/* Glow */}
-            <div className="absolute -inset-4 rounded-xl bg-blue-300 blur-2xl opacity-30 group-hover:opacity-60 transition-all duration-300 z-0" />
+            <div className="absolute -inset-4 rounded-xl blur-2xl opacity-30 group-hover:opacity-60 transition-all duration-300 z-0" />
 
             {/* Card */}
             <Card className="relative z-10 shadow-xl overflow-hidden rounded-xl bg-white border border-gray-200">
@@ -93,12 +93,12 @@ export default function ExperienceSection() {
                 src={card.image}
                 alt={card.subtitle}
                 width={400}
-                height={250}
+                height={230}
                 className="w-full h-56 object-cover"
               />
-              <div className="p-6 text-left">
-                <p className="text-[16px] font-bold font-poppins text-[#1e293b] uppercase">{card.title}</p>
-                <h3 className="text-[12px] font-regular mt-1 text-[#1A1A1A]">
+              <div className="p-4 text-center">
+                <p className="text-[12px] font-bold font-poppins text-[#1e293b] uppercase">{card.title}</p>
+                <h3 className="text-[8px] font-regular mt-1 text-[#1A1A1A]">
                   {card.subtitle}
                 </h3>
               </div>
