@@ -54,7 +54,7 @@ export default function ExperienceSection() {
   const scrollRef = useRef(null);
 
   return (
-    <section className="relative w-full h-screen bg-gradient-to-b from-[#f0f4ff] to-[#ffffff] text-[#1e293b] overflow-hidden flex flex-col mt-6">
+    <section className="relative w-full h-full py-4 bg-gradient-to-b from-[#f0f4ff] to-[#ffffff] text-[#1e293b] overflow-hidden flex flex-col">
       {/* <Spotlight className="top-0 left-0" fill="#e0e8ff" /> */}
 
       {/* Header */}
@@ -70,7 +70,7 @@ export default function ExperienceSection() {
       {/* Horizontal Scroll with Perspective */}
       <div
         ref={scrollRef}
-        className="px-8 flex gap-10 overflow-x-auto scroll-smooth snap-x snap-mandatory pb-8 perspective-[1500px] scroll-no-bar overflow-y-hidden"
+        className="px-8 flex gap-10 overflow-x-auto scroll-smooth snap-x snap-mandatory perspective-[1500px] scroll-no-bar overflow-y-hidden"
       >
         {cards.map((card, index) => (
           <motion.div
@@ -85,7 +85,7 @@ export default function ExperienceSection() {
             viewport={{ once: true, amount: 0.3 }}
           >
             {/* Glow */}
-            <div className="absolute -inset-4 rounded-xl blur-2xl opacity-30 group-hover:opacity-60 transition-all duration-300 z-0" />
+            {/* <div className="absolute -inset-4 rounded-xl blur-2xl opacity-30 group-hover:opacity-60 transition-all duration-300 z-0" /> */}
 
             {/* Card */}
             <Card className="relative z-10 shadow-xl overflow-hidden rounded-xl bg-white border border-gray-200">
@@ -97,16 +97,16 @@ export default function ExperienceSection() {
                 className="w-full h-56 object-cover"
               />
               <div className="p-4 text-center">
-                <p className="text-[12px] font-bold font-poppins text-[#1e293b] uppercase">{card.title}</p>
-                <h3 className="text-[8px] font-regular mt-1 text-[#1A1A1A]">
+                <p className="text-[14px] font-bold font-poppins text-[#1e293b] uppercase">{card.title}</p>
+                <h3 className="text-[10px] font-regular mt-1 text-[#1A1A1A]">
                   {card.subtitle}
                 </h3>
               </div>
 
               {/* Icon Overlay */}
-              <div className="absolute -top-2 right-6 bg-white border-4 border-gray-300 p-4 rounded-full z-20 shadow-md">
-                <Image src={card.icon} alt="icon" width={35} height={35} />
-              </div>
+              {/* <div className="absolute -top-2 right-6 bg-white border-4 border-gray-300 p-4 rounded-full z-20 shadow-md">
+                <Image src={card.icon} alt="icon" width={22} height={22} />
+              </div> */}
             </Card>
           </motion.div>
         ))}
