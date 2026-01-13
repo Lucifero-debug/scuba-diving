@@ -10,7 +10,7 @@ export default function ExperienceSection() {
     {
       title: "SCUBA DIVING",
       subtitle: "Explore Underwater Life",
-      image: "https://images.unsplash.com/photo-1682686581030-7fa4ea2b96c3?q=80&w=1170&auto=format&fit=crop",
+      image: "/home/new.png",
       icon: "/icons/divemask.jpg",
     },
     {
